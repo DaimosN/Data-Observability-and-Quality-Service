@@ -243,3 +243,30 @@ def register_custom_metrics():
     """
     # По умолчанию все метрики уже зарегистрированы в глобальном REGISTRY
     logger.info(f"Registered metrics: {[metric.name for metric in REGISTRY.collect()]}")
+
+
+# ===============================================================
+
+def update_uniqueness_metric(table_name: str, column_name: str, uniqueness_percent: float):
+    """Обновление метрики уникальности данных"""
+    dq_uniqueness.labels(table_name=table_name, column_name=column_name).set(uniqueness_percent)
+
+def update_freshness_metric(table_name: str, hours: float):
+    """Обновление метрики свежести данных"""
+    dq_freshness_hours.labels(table_name=table_name).set(hours)
+
+def update_anomaly_count(table_name: str, column_name: str, anomaly_type: str, count: int):
+    """Обновление счетчика аномалий"""
+    dq_anomaly_count.labels(
+        table_name=table_name,
+        column_name=column_name,
+        anomaly_type=anomaly_type
+    ).set(count)
+
+def update_active_rules(rule_category: str, count: int):
+    """Обновление количества активных правил"""
+    dq_active_rules.labels(rule_category=rule_category).set(count)
+
+def record_batch_size(source: str, size: int):
+    """Запись размера пакета в гистограмму"""
+    dq_batch_size.labels(source=source).observe(size)

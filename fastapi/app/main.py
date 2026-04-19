@@ -6,12 +6,15 @@ import asyncio
 import pandas as pd
 from fastapi import FastAPI, UploadFile, File, Response, HTTPException
 from prometheus_client import generate_latest
+from apscheduler.schedulers.background import BackgroundScheduler
 
 from database import get_db_connection
 from validators import EmployeeRecordValidator, validate_excel_structure, sanitize_dataframe
 from metrics import (
     record_validation_result, record_validation_error, ValidationTimer,
-    update_quarantine_metrics, init_metrics, record_file_processed
+    update_quarantine_metrics, init_metrics, record_file_processed, update_overall_score, update_completeness_metric,
+    update_overall_score, update_completeness_metric,
+    update_uniqueness_metric, update_freshness_metric
 )
 
 logger = logging.getLogger(__name__)
@@ -22,7 +25,72 @@ app = FastAPI()
 @app.on_event("startup")
 async def startup_event():
     init_metrics(service_version="1.0.0", environment="development")
+
+    # Запускаем фоновый scheduler для обновления метрик
+    scheduler = BackgroundScheduler()
+    scheduler.add_job(update_all_quality_metrics, 'interval', minutes=5)
+    scheduler.start()
+
     logger.info("DQ Service started")
+
+
+def update_all_quality_metrics():
+    """Периодическое обновление всех метрик качества"""
+    conn = get_db_connection()
+    cur = conn.cursor()
+
+    try:
+        # 1. Общая оценка качества
+        cur.execute("""
+            SELECT 
+                COUNT(*) as total,
+                SUM(CASE WHEN full_name IS NOT NULL THEN 1 ELSE 0 END) as full_name_filled,
+                SUM(CASE WHEN position IS NOT NULL THEN 1 ELSE 0 END) as position_filled,
+                SUM(CASE WHEN salary IS NOT NULL THEN 1 ELSE 0 END) as salary_filled
+            FROM hr.employees
+        """)
+        result = cur.fetchone()
+
+        if result and result[0] > 0:
+            # Средняя полнота данных
+            completeness_score = (
+                                         (result[1] + result[2] + result[3]) / (result[0] * 3)
+                                 ) * 100
+            update_overall_score("hr.employees", completeness_score)
+
+            # Полнота по колонкам
+            update_completeness_metric("hr.employees", "full_name",
+                                       (result[1] / result[0]) * 100 if result[0] > 0 else 0)
+            update_completeness_metric("hr.employees", "position",
+                                       (result[2] / result[0]) * 100 if result[0] > 0 else 0)
+            update_completeness_metric("hr.employees", "salary",
+                                       (result[3] / result[0]) * 100 if result[0] > 0 else 0)
+
+        # 2. Свежесть данных (часы с последнего обновления)
+        cur.execute("""
+            SELECT EXTRACT(EPOCH FROM (NOW() - MAX(created_at)))/3600 as hours
+            FROM hr.employees
+        """)
+        result = cur.fetchone()
+        if result and result[0] is not None:
+            update_freshness_metric("hr.employees", result[0])
+
+        # 3. Уникальность (например, по паспортам)
+        cur.execute("""
+            SELECT 
+                COUNT(DISTINCT passport_data)::float / COUNT(*)::float * 100 as uniqueness
+            FROM hr.employees
+            WHERE passport_data IS NOT NULL
+        """)
+        result = cur.fetchone()
+        if result and result[0] is not None:
+            update_uniqueness_metric("hr.employees", "passport_data", result[0])
+
+    except Exception as e:
+        logger.error(f"Error updating quality metrics: {e}")
+    finally:
+        cur.close()
+        conn.close()
 
 
 async def run_in_thread(func, *args, **kwargs):
@@ -130,6 +198,23 @@ async def upload_excel(file: UploadFile = File(...)):
         await run_in_thread(update_quarantine_metrics, get_db_connection())
     except Exception as e:
         logger.warning(f"Could not update quarantine metrics: {e}")
+
+    # После сохранения данных, обновите метрики качества
+    if approved_rows:
+        # Рассчитываем оценку качества
+        total_records = len(df)
+        if total_records > 0:
+            quality_score = (results["approved"] / total_records) * 100
+            update_overall_score("hr.employees", quality_score)
+
+            # Обновляем полноту данных по колонкам
+            for column in ['full_name', 'position', 'salary']:
+                if column in df.columns:
+                    non_null_count = df[column].notna().sum()
+                    completeness = (non_null_count / total_records) * 100
+                    update_completeness_metric("hr.employees", column, completeness)
+
+        return results
 
     return results
 
