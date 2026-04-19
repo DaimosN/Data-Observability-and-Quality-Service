@@ -1,3 +1,4 @@
+import io
 import json
 import logging
 import asyncio
@@ -67,13 +68,26 @@ async def upload_excel(file: UploadFile = File(...)):
 
     with ValidationTimer("excel_processing"):
         contents = await file.read()
-        df = await run_in_thread(pd.read_excel, contents)
+        df = await run_in_thread(pd.read_excel, io.BytesIO(contents))
 
-    expected_cols = ['full_name', 'birth_date', 'hire_date', 'position', 'salary']
-    is_valid_structure, errors = validate_excel_structure(df.columns.tolist(), expected_cols)
-    if not is_valid_structure:
+    # Преобразуем passport_series и passport_number в строки
+    if 'passport_series' in df.columns:
+        df['passport_series'] = df['passport_series'].astype(str).str.replace('.0', '', regex=False)
+    if 'passport_number' in df.columns:
+        df['passport_number'] = df['passport_number'].astype(str).str.replace('.0', '', regex=False)
+
+    # Проверяем только наличие обязательных столбцов
+    required_cols = ['full_name', 'birth_date', 'hire_date', 'position', 'salary']
+    missing_cols = [col for col in required_cols if col not in df.columns]
+
+    if missing_cols:
         record_file_processed("excel", success=False)
-        raise HTTPException(400, detail=errors)
+        raise HTTPException(400, detail=f"Отсутствуют обязательные столбцы: {', '.join(missing_cols)}")
+
+    # Логируем дополнительные столбцы
+    extra_cols = [col for col in df.columns if col not in required_cols]
+    if extra_cols:
+        logger.info(f"Дополнительные столбцы в файле: {extra_cols}")
 
     df = await run_in_thread(sanitize_dataframe, df)
     validator = EmployeeRecordValidator(get_db_connection())
@@ -81,8 +95,14 @@ async def upload_excel(file: UploadFile = File(...)):
     results = {"total": len(df), "approved": 0, "quarantine": 0, "errors_detail": []}
     approved_rows, quarantine_rows = [], []
 
-    for _, row in df.iterrows():
+    for idx, row in df.iterrows():
         row_dict = row.to_dict()
+
+        # Преобразуем даты из Timestamp в date если нужно
+        for date_field in ['birth_date', 'hire_date', 'termination_date']:
+            if date_field in row_dict and hasattr(row_dict[date_field], 'date'):
+                row_dict[date_field] = row_dict[date_field].date()
+
         is_valid, errors = validator.validate_full(row_dict)
 
         if is_valid:
@@ -92,43 +112,128 @@ async def upload_excel(file: UploadFile = File(...)):
         else:
             quarantine_rows.append((row_dict, errors))
             record_validation_result(status="quarantine", source="excel")
+            results["quarantine"] += 1
+            results["errors_detail"].append({"row": idx + 2, "errors": errors})
             for err in errors:
                 record_validation_error(error_type=f"{err['field']}_invalid", field=err["field"])
 
-        # Батчевая запись в БД (одно соединение на запрос)
+    # Батчевая запись в БД
     if approved_rows:
         await run_in_thread(_batch_save_production, approved_rows)
     if quarantine_rows:
         await run_in_thread(_batch_save_quarantine, quarantine_rows)
 
     record_file_processed("excel", success=True)
-    await run_in_thread(update_quarantine_metrics, get_db_connection())
+
+    # Попытка обновить метрики карантина
+    try:
+        await run_in_thread(update_quarantine_metrics, get_db_connection())
+    except Exception as e:
+        logger.warning(f"Could not update quarantine metrics: {e}")
+
     return results
 
 
 def _batch_save_production(records: list[dict]):
+    """
+    Пакетное сохранение записей в production таблицу
+    """
+    if not records:
+        return
+
     conn = get_db_connection()
     cur = conn.cursor()
-    cur.executemany("""
-        INSERT INTO hr.employees (full_name, birth_date, hire_date, termination_date, position, salary, passport_data)
-        VALUES (%(full_name)s, %(birth_date)s, %(hire_date)s, %(termination_date)s, %(position)s, %(salary)s, 
-                %(passport_series)s || ' ' || %(passport_number)s)
-    """, records)
-    conn.commit()
-    cur.close()
-    conn.close()
+
+    try:
+        for record in records:
+            # Формируем passport_data из series и number
+            passport_series = str(record.get('passport_series', ''))
+            passport_number = str(record.get('passport_number', ''))
+            passport_data = f"{passport_series} {passport_number}".strip()
+            if passport_data == '':
+                passport_data = None
+
+            # Безопасно получаем termination_date (может отсутствовать или быть None)
+            termination_date = record.get('termination_date')
+            if termination_date and hasattr(termination_date, 'isoformat'):
+                termination_date = termination_date.isoformat()
+
+            # Получаем даты и преобразуем если нужно
+            birth_date = record.get('birth_date')
+            if birth_date and hasattr(birth_date, 'isoformat'):
+                birth_date = birth_date.isoformat()
+
+            hire_date = record.get('hire_date')
+            if hire_date and hasattr(hire_date, 'isoformat'):
+                hire_date = hire_date.isoformat()
+
+            cur.execute("""
+                INSERT INTO hr.employees (full_name, birth_date, hire_date, termination_date, position, salary, passport_data)
+                VALUES (%s, %s, %s, %s, %s, %s, %s)
+            """, (
+                record.get('full_name'),
+                birth_date,
+                hire_date,
+                termination_date,
+                record.get('position'),
+                record.get('salary'),
+                passport_data
+            ))
+
+        conn.commit()
+        logger.info(f"Successfully saved {len(records)} records to production")
+
+    except Exception as e:
+        conn.rollback()
+        logger.error(f"Error saving to production: {e}")
+        raise
+    finally:
+        cur.close()
+        conn.close()
 
 
 def _batch_save_quarantine(records: list[tuple[dict, list]]):
+    """
+    Пакетное сохранение записей в карантин
+    """
+    if not records:
+        return
+
     conn = get_db_connection()
     cur = conn.cursor()
-    cur.executemany("""
-        INSERT INTO data_quality.quarantine_log (raw_data, validation_errors)
-        VALUES (%s, %s)
-    """, [(json.dumps(r, default=str), json.dumps(e)) for r, e in records])
-    conn.commit()
-    cur.close()
-    conn.close()
+
+    try:
+        for raw_row, errors in records:
+            # Очищаем данные для JSON сериализации
+            clean_row = {}
+            for key, value in raw_row.items():
+                if value is None:
+                    clean_row[key] = None
+                elif hasattr(value, 'isoformat'):  # datetime, date
+                    clean_row[key] = value.isoformat()
+                elif isinstance(value, (int, float, str, bool)):
+                    clean_row[key] = value
+                else:
+                    clean_row[key] = str(value)
+
+            cur.execute("""
+                INSERT INTO data_quality.quarantine_log (raw_data, validation_errors)
+                VALUES (%s, %s)
+            """, (
+                json.dumps(clean_row, ensure_ascii=False, default=str),
+                json.dumps(errors, ensure_ascii=False, default=str)
+            ))
+
+        conn.commit()
+        logger.info(f"Successfully saved {len(records)} records to quarantine")
+
+    except Exception as e:
+        conn.rollback()
+        logger.error(f"Error saving to quarantine: {e}")
+        raise
+    finally:
+        cur.close()
+        conn.close()
 
 
 @app.get("/metrics")
