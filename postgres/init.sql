@@ -2,17 +2,22 @@ CREATE SCHEMA IF NOT EXISTS hr;
 CREATE SCHEMA IF NOT EXISTS data_quality;
 
 -- Production
-CREATE TABLE hr.employees
-(
-    id               SERIAL PRIMARY KEY,
-    full_name        VARCHAR(200) NOT NULL,
-    birth_date       DATE         NOT NULL,
-    hire_date        DATE         NOT NULL,
+-- Удаляем старую таблицу employees (только если данные не важны)
+DROP TABLE IF EXISTS hr.employees CASCADE;
+
+-- Создаем таблицу employees с отдельными полями для ФИО
+CREATE TABLE IF NOT EXISTS hr.employees (
+    id SERIAL PRIMARY KEY,
+    last_name VARCHAR(100) NOT NULL,      -- Фамилия
+    first_name VARCHAR(100) NOT NULL,     -- Имя
+    middle_name VARCHAR(100),             -- Отчество (может быть NULL)
+    birth_date DATE NOT NULL,
+    hire_date DATE NOT NULL,
     termination_date DATE,
-    position         VARCHAR(100),
-    salary           NUMERIC(10, 2),
-    passport_data    VARCHAR(20),
-    created_at       TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+    position VARCHAR(100),
+    salary NUMERIC(10,2),
+    passport_data VARCHAR(20),
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
 -- Карантин
@@ -118,7 +123,7 @@ FROM (VALUES (1, 'Руководство', NULL, true),
 WHERE NOT EXISTS (SELECT 1 FROM hr.dict_departments LIMIT 1);
 
 -- Создание индексов для оптимизации
-CREATE INDEX IF NOT EXISTS idx_employees_full_name ON hr.employees(full_name);
+-- CREATE INDEX IF NOT EXISTS idx_employees_full_name ON hr.employees(full_name);
 CREATE INDEX IF NOT EXISTS idx_employees_position ON hr.employees(position);
 CREATE INDEX IF NOT EXISTS idx_employees_hire_date ON hr.employees(hire_date);
 CREATE INDEX IF NOT EXISTS idx_quarantine_status ON data_quality.quarantine_log(dq_status);

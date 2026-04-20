@@ -4,6 +4,7 @@
 Использует prometheus_client для сбора и экспорта метрик.
 """
 import time
+from datetime import datetime
 
 from prometheus_client import Counter, Gauge, Histogram, Info, REGISTRY
 import logging
@@ -18,7 +19,7 @@ logger = logging.getLogger(__name__)
 dq_validations_total = Counter(
     'dq_validations_total',
     'Total number of data validations performed',
-    labelnames=['status', 'source']  # status: approved/quarantine, source: excel/word/api
+    labelnames=['status', 'source']
 )
 
 # Счётчик ошибок по типам (для анализа частоты проблем)
@@ -81,6 +82,24 @@ dq_anomaly_count = Gauge(
     labelnames=['table_name', 'column_name', 'anomaly_type']
 )
 
+dq_table_size = Gauge(
+    'dq_table_size_rows',
+    'Total number of rows in the table',
+    labelnames=['table_name']
+)
+
+dq_duplicate_groups = Gauge(
+    'dq_duplicate_groups',
+    'Number of duplicate groups found',
+    labelnames=['table_name']
+)
+
+dq_last_load_timestamp = Gauge(
+    'dq_last_load_timestamp_seconds',
+    'Timestamp of the last successful data load',
+    labelnames=['table_name']
+)
+
 # ============================================================
 # 3. Метрики производительности (гистограммы)
 # ============================================================
@@ -99,6 +118,12 @@ dq_batch_size = Histogram(
     'Number of records per batch',
     labelnames=['source'],
     buckets=[1, 5, 10, 25, 50, 100, 250, 500, 1000]
+)
+
+dq_salary_distribution = Gauge(
+    'dq_salary_distribution',
+    'Distribution of salaries by range',
+    labelnames=['salary_range']
 )
 
 # ============================================================
@@ -124,10 +149,7 @@ dq_active_rules = Gauge(
 # ============================================================
 
 def init_metrics(service_version: str = "1.0.0", environment: str = "production"):
-    """
-    Инициализация информационных метрик при старте сервиса.
-    Вызывается один раз в main.py при запуске.
-    """
+    """Инициализация информационных метрик при старте сервиса."""
     dq_service_info.info({
         'version': service_version,
         'environment': environment,
@@ -137,45 +159,27 @@ def init_metrics(service_version: str = "1.0.0", environment: str = "production"
 
 
 def record_validation_result(status: str, source: str = "api"):
-    """
-    Утилитарная функция для записи результата валидации.
-
-    Args:
-        status: 'approved' или 'quarantine'
-        source: 'excel', 'word', 'api', 'batch'
-    """
+    """Утилитарная функция для записи результата валидации."""
     dq_validations_total.labels(status=status, source=source).inc()
     logger.debug(f"Validation result recorded: {status} from {source}")
 
 
 def record_validation_error(error_type: str, field: str):
-    """
-    Запись конкретной ошибки валидации.
-
-    Args:
-        error_type: 'age_invalid', 'position_missing', 'date_future', и т.д.
-        field: имя поля, где произошла ошибка
-    """
+    """Запись конкретной ошибки валидации."""
     dq_validation_errors.labels(error_type=error_type, field=field).inc()
 
 
 def record_file_processed(file_type: str, success: bool):
-    """
-    Запись факта обработки файла.
-    """
+    """Запись факта обработки файла."""
     status = "success" if success else "failed"
     dq_files_processed.labels(file_type=file_type, status=status).inc()
 
 
 def update_quarantine_metrics(db_connection):
-    """
-    Обновление метрик размера карантина.
-    Вызывается периодически (например, раз в минуту).
-    """
+    """Обновление метрик размера карантина."""
     try:
         cursor = db_connection.cursor()
 
-        # Для каждого статуса считаем количество записей
         for status in ['new', 'in_review', 'fixed', 'rejected']:
             cursor.execute(
                 "SELECT COUNT(*) FROM data_quality.quarantine_log WHERE dq_status = %s",
@@ -192,18 +196,62 @@ def update_quarantine_metrics(db_connection):
 
 
 def update_completeness_metric(table_name: str, column_name: str, completeness_percent: float):
-    """
-    Обновление метрики полноты данных.
-    """
+    """Обновление метрики полноты данных."""
     dq_completeness.labels(table_name=table_name, column_name=column_name).set(completeness_percent)
 
 
 def update_overall_score(table_name: str, score: float):
-    """
-    Обновление общей оценки качества данных.
-    Score вычисляется как средневзвешенное по метрикам.
-    """
+    """Обновление общей оценки качества данных."""
     dq_overall_score.labels(table_name=table_name).set(score)
+
+
+def update_uniqueness_metric(table_name: str, column_name: str, uniqueness_percent: float):
+    """Обновление метрики уникальности данных."""
+    dq_uniqueness.labels(table_name=table_name, column_name=column_name).set(uniqueness_percent)
+
+
+def update_freshness_metric(table_name: str, hours: float):
+    """Обновление метрики свежести данных."""
+    dq_freshness_hours.labels(table_name=table_name).set(hours)
+
+
+def update_anomaly_count(table_name: str, column_name: str, anomaly_type: str, count: int):
+    """Обновление счетчика аномалий."""
+    dq_anomaly_count.labels(
+        table_name=table_name,
+        column_name=column_name,
+        anomaly_type=anomaly_type
+    ).set(count)
+
+
+def update_active_rules(rule_category: str, count: int):
+    """Обновление количества активных правил."""
+    dq_active_rules.labels(rule_category=rule_category).set(count)
+
+
+def record_batch_size(source: str, size: int):
+    """Запись размера пакета в гистограмму."""
+    dq_batch_size.labels(source=source).observe(size)
+
+
+def update_table_size_metric(table_name: str, row_count: int):
+    """Обновление метрики размера таблицы."""
+    dq_table_size.labels(table_name=table_name).set(row_count)
+
+
+def update_last_load_timestamp(table_name: str):
+    """Обновление метрики времени последней загрузки."""
+    dq_last_load_timestamp.labels(table_name=table_name).set(datetime.now().timestamp())
+
+
+def update_duplicate_metric(table_name: str, duplicate_count: int):
+    """Обновление метрики количества дубликатов."""
+    dq_duplicate_groups.labels(table_name=table_name).set(duplicate_count)
+
+
+def update_salary_distribution(salary_range: str, count: int):
+    """Обновление распределения зарплат."""
+    dq_salary_distribution.labels(salary_range=salary_range).set(count)
 
 
 # ============================================================
@@ -237,36 +285,5 @@ class ValidationTimer:
 # ============================================================
 
 def register_custom_metrics():
-    """
-    Регистрация всех метрик (опционально, prometheus_client делает это автоматически).
-    Нужно только если используются кастомные коллекторы.
-    """
-    # По умолчанию все метрики уже зарегистрированы в глобальном REGISTRY
+    """Регистрация всех метрик."""
     logger.info(f"Registered metrics: {[metric.name for metric in REGISTRY.collect()]}")
-
-
-# ===============================================================
-
-def update_uniqueness_metric(table_name: str, column_name: str, uniqueness_percent: float):
-    """Обновление метрики уникальности данных"""
-    dq_uniqueness.labels(table_name=table_name, column_name=column_name).set(uniqueness_percent)
-
-def update_freshness_metric(table_name: str, hours: float):
-    """Обновление метрики свежести данных"""
-    dq_freshness_hours.labels(table_name=table_name).set(hours)
-
-def update_anomaly_count(table_name: str, column_name: str, anomaly_type: str, count: int):
-    """Обновление счетчика аномалий"""
-    dq_anomaly_count.labels(
-        table_name=table_name,
-        column_name=column_name,
-        anomaly_type=anomaly_type
-    ).set(count)
-
-def update_active_rules(rule_category: str, count: int):
-    """Обновление количества активных правил"""
-    dq_active_rules.labels(rule_category=rule_category).set(count)
-
-def record_batch_size(source: str, size: int):
-    """Запись размера пакета в гистограмму"""
-    dq_batch_size.labels(source=source).observe(size)
