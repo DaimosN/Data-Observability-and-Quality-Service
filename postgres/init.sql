@@ -2,7 +2,6 @@ CREATE SCHEMA IF NOT EXISTS hr;
 CREATE SCHEMA IF NOT EXISTS data_quality;
 
 -- Production
--- Удаляем старую таблицу employees (только если данные не важны)
 DROP TABLE IF EXISTS hr.employees CASCADE;
 
 -- Создаем таблицу employees с отдельными полями для ФИО
@@ -123,7 +122,6 @@ FROM (VALUES (1, 'Руководство', NULL, true),
 WHERE NOT EXISTS (SELECT 1 FROM hr.dict_departments LIMIT 1);
 
 -- Создание индексов для оптимизации
--- CREATE INDEX IF NOT EXISTS idx_employees_full_name ON hr.employees(full_name);
 CREATE INDEX IF NOT EXISTS idx_employees_position ON hr.employees(position);
 CREATE INDEX IF NOT EXISTS idx_employees_hire_date ON hr.employees(hire_date);
 CREATE INDEX IF NOT EXISTS idx_quarantine_status ON data_quality.quarantine_log(dq_status);

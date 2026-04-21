@@ -2,7 +2,6 @@ import io
 import json
 import logging
 import asyncio
-from datetime import datetime
 
 import pandas as pd
 from fastapi import FastAPI, UploadFile, File, Response, HTTPException
@@ -85,7 +84,6 @@ def update_all_quality_metrics():
                 SUM(CASE WHEN birth_date IS NOT NULL THEN 1 ELSE 0 END) as birth_date_filled,
                 SUM(CASE WHEN hire_date IS NOT NULL THEN 1 ELSE 0 END) as hire_date_filled,
                 SUM(CASE WHEN passport_data IS NOT NULL THEN 1 ELSE 0 END) as passport_filled
-                -- termination_date не проверяем, так как она опциональная
             FROM hr.employees
         """)
         result = cur.fetchone()
@@ -266,7 +264,7 @@ async def upload_excel(file: UploadFile = File(...)):
         if col in df.columns:
             df[col] = df[col].astype(str).str.replace('.0', '', regex=False)
 
-    # Проверяем наличие обязательных столбцов (termination_date убрана из обязательных)
+    # Проверяем наличие обязательных столбцов
     required_cols = ['last_name', 'first_name', 'birth_date', 'hire_date', 'position', 'salary']
     missing_cols = [col for col in required_cols if col not in df.columns]
 
