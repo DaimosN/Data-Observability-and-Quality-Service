@@ -17,19 +17,57 @@
 - **Автоматическое определение качества данных** (completeness, uniqueness, freshness)
 - **Обнаружение аномалий** и статистических выбросов
 
+### Двухконтурный механизм контроля качества
+
+1. **On-line контур** — валидация при загрузке (каждая запись получает решение `approved` / `quarantine`).
+2. **Off-line контур** — периодический пересчёт метрик качества по целевой таблице (полнота, свежесть, уникальность, дубли, аномалии).
+
 ---
 
 ## 🏗 Архитектура проекта
+
 ```
 project/
-├── main.py          # FastAPI приложение, эндпоинты
-├── validators.py    # Кастомные валидаторы данных
-├── models.py        # Pydantic модели
-├── metrics.py       # Prometheus метрики
-├── database.py      # Подключение к PostgreSQL
-├── test_.py         # Генератор тестовых данных
-└── requirements.txt # Зависимости
+├── app/
+│   ├── init.py
+│   ├── main.py              # FastAPI-приложение, lifespan, эндпоинты
+│   ├── database.py          # AsyncConnectionPool (psycopg3), context manager
+│   ├── models.py            # EmployeeContract (Pydantic) — форматная/бизнес-валидация
+│   ├── validators.py        # ИНН/СНИЛС/телефон, справочные валидаторы
+│   ├── batch_save.py        # executemany + COPY для массовой записи
+│   ├── quality_metrics.py   # Периодический пересчёт метрик качества
+│   └── metrics.py           # Определение метрик Prometheus
+├── postgres/
+│   └── init.sql             # Схема БД, справочники, индексы
+├── prometheus/
+│   └── prometheus.yml       # config
+├── grafana/
+│   ├── provisioning/        # Datasource и Dashboard provisioning
+│   └── dashboards/          # JSON-дашборды
+├── Dockerfile               # Multi-stage, non-root, healthcheck
+├── docker-compose.yml       # Оркестрация стека
+├── requirements.txt
+└── README.md
 ```
+
+## 🛠 Стек технологий
+
+| Компонент | Версия | Назначение |
+|---|---|---|
+| Python | 3.11 | Язык реализации |
+| FastAPI | 0.110 | Асинхронный веб-фреймворк |
+| Uvicorn | 0.29 | ASGI-сервер |
+| Pydantic | 2.6 | Декларативная валидация |
+| psycopg3 | 3.1 | Асинхронный PostgreSQL-драйвер с пулом соединений |
+| PostgreSQL | 15 | СУБД |
+| APScheduler | 3.10 | Планировщик задач (`AsyncIOScheduler`) |
+| prometheus_client | 0.19 | Сбор и экспорт метрик |
+| pandas + openpyxl | 2.1 / 3.1 | Чтение Excel |
+| Prometheus | 2.51 | Хранение временных рядов |
+| Grafana | 10.4 | Визуализация метрик |
+| Docker Compose | — | Оркестрация |
+
+
 
 
 ---

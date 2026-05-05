@@ -12,15 +12,23 @@ services:
     volumes:
       - ./postgres/init.sql:/docker-entrypoint-initdb.d/init.sql
       - pg_data:/var/lib/postgresql/data
+    healthcheck:
+      test: [ "CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-dq_user} -d ${POSTGRES_DB:-dq_db}" ]
+      interval: 5s
+      timeout: 3s
+      retries: 10
 
   fastapi:
     build: ./fastapi
     ports:
       - "8000:8000"
     depends_on:
-      - postgres
+      postgres:
+        condition: service_healthy
     environment:
       DATABASE_URL: postgresql://dq_user:dq_pass@postgres:5432/dq_db
+      DB_POOL_MIN: "2"
+      DB_POOL_MAX: "10"
 
   prometheus:
     image: prom/prometheus
