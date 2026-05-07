@@ -109,7 +109,7 @@ class PositionValidator:
 
 class DepartmentValidator:
     """Проверка подразделений по справочнику hr.dict_departments."""
-
+    """В РАЗРАБОТКЕ"""
     CACHE_TTL_SECONDS = 3600  # 1 час
 
     def __init__(self):
