@@ -5,6 +5,7 @@ Pydantic-модели для валидации кадровых данных.
 from datetime import date, datetime
 from typing import Optional, Any
 import re
+import pandas as pd
 
 from pydantic import (
     BaseModel,
@@ -88,9 +89,15 @@ class EmployeeContract(BaseModel):
         if v is None:
             return None
         # Убираем артефакты pandas ("1234.0"), пробелы, дефисы
-        s = str(v).strip().replace(" ", "").replace("-", "")
-        if s.endswith(".0"):
-            s = s[:-2]
+        # Преобразуем float/int в строку без .0
+        if isinstance(v, (int, float)):
+            if pd.isna(v):
+                return None
+            s = str(int(v))  # int, чтобы убрать .0
+        else:
+            s = str(v).strip().replace(" ", "").replace("-", "")
+            if s.endswith(".0"):
+                s = s[:-2]
         return s or None
 
     # ---------- Форматная валидация ----------

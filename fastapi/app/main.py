@@ -89,8 +89,8 @@ app = FastAPI(
 
 @app.post("/upload/excel/")
 async def upload_excel(
-    file: UploadFile = File(...),
-    conn: AsyncConnection = Depends(db_dependency),
+        file: UploadFile = File(...),
+        conn: AsyncConnection = Depends(db_dependency),
 ):
     """Приём Excel-файла, валидация и маршрутизация записей (production/карантин)."""
     if not file.filename.endswith(".xlsx"):
@@ -103,7 +103,14 @@ async def upload_excel(
     # --- Чтение Excel ---
     try:
         with ValidationTimer("excel_processing"):
-            df = await asyncio.to_thread(pd.read_excel, io.BytesIO(contents))
+            df = await asyncio.to_thread(
+                pd.read_excel,
+                io.BytesIO(contents),
+                dtype={
+                    "inn": str,
+                    "snils": str,
+                }
+            )
             df = await asyncio.to_thread(sanitize_dataframe, df)
     except Exception as e:
         record_file_processed("excel", success=False)
