@@ -1,0 +1,6288 @@
+{
+  "parameters": {
+    "size": 1000,
+    "noise": 0.3,
+    "duplicates": 0.05,
+    "seed": 103,
+    "output": "datasets/-1000-high.xlsx"
+  },
+  "stats": {
+    "total": 1050,
+    "valid": 714,
+    "corrupt": 286,
+    "duplicates": 50
+  },
+  "manifest": [
+    {
+      "row": 2,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 3,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 4,
+      "status": "corrupt",
+      "defects": [
+        "birth_date_bad_format",
+        "inn_bad_checksum"
+      ]
+    },
+    {
+      "row": 5,
+      "status": "corrupt",
+      "defects": [
+        "salary_negative",
+        "inn_bad_checksum"
+      ]
+    },
+    {
+      "row": 6,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 7,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 8,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 9,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 10,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 11,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 12,
+      "status": "corrupt",
+      "defects": [
+        "position_not_in_dict"
+      ]
+    },
+    {
+      "row": 13,
+      "status": "corrupt",
+      "defects": [
+        "birth_date_underage"
+      ]
+    },
+    {
+      "row": 14,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 15,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 16,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 17,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 18,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 19,
+      "status": "corrupt",
+      "defects": [
+        "birth_date_underage",
+        "hire_date_future",
+        "snils_bad_checksum"
+      ]
+    },
+    {
+      "row": 20,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 21,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 22,
+      "status": "corrupt",
+      "defects": [
+        "passport_missing",
+        "inn_wrong_length",
+        "position_not_in_dict"
+      ]
+    },
+    {
+      "row": 23,
+      "status": "corrupt",
+      "defects": [
+        "inn_bad_checksum"
+      ]
+    },
+    {
+      "row": 24,
+      "status": "corrupt",
+      "defects": [
+        "inn_bad_checksum"
+      ]
+    },
+    {
+      "row": 25,
+      "status": "corrupt",
+      "defects": [
+        "salary_below_mrot",
+        "passport_series_short",
+        "position_not_in_dict"
+      ]
+    },
+    {
+      "row": 26,
+      "status": "corrupt",
+      "defects": [
+        "birth_date_too_old",
+        "passport_series_short",
+        "snils_bad_checksum"
+      ]
+    },
+    {
+      "row": 27,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 28,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 29,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 30,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 31,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 32,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 33,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 34,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 35,
+      "status": "corrupt",
+      "defects": [
+        "salary_zero"
+      ]
+    },
+    {
+      "row": 36,
+      "status": "corrupt",
+      "defects": [
+        "salary_negative",
+        "inn_wrong_length",
+        "snils_missing"
+      ]
+    },
+    {
+      "row": 37,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 38,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 39,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 40,
+      "status": "corrupt",
+      "defects": [
+        "hire_date_before_birth",
+        "salary_below_mrot"
+      ]
+    },
+    {
+      "row": 41,
+      "status": "corrupt",
+      "defects": [
+        "birth_date_too_old",
+        "snils_missing"
+      ]
+    },
+    {
+      "row": 42,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 43,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 44,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 45,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 46,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 47,
+      "status": "corrupt",
+      "defects": [
+        "inn_wrong_length",
+        "gender_invalid",
+        "position_not_in_dict"
+      ]
+    },
+    {
+      "row": 48,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 49,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 50,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 51,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 52,
+      "status": "corrupt",
+      "defects": [
+        "passport_series_short"
+      ]
+    },
+    {
+      "row": 53,
+      "status": "corrupt",
+      "defects": [
+        "hire_date_future",
+        "snils_bad_checksum",
+        "gender_invalid"
+      ]
+    },
+    {
+      "row": 54,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 55,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 56,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 57,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 58,
+      "status": "corrupt",
+      "defects": [
+        "birth_date_underage",
+        "passport_number_short"
+      ]
+    },
+    {
+      "row": 59,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 60,
+      "status": "corrupt",
+      "defects": [
+        "hire_date_before_birth"
+      ]
+    },
+    {
+      "row": 61,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 62,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 63,
+      "status": "corrupt",
+      "defects": [
+        "gender_invalid"
+      ]
+    },
+    {
+      "row": 64,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 65,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 66,
+      "status": "corrupt",
+      "defects": [
+        "birth_date_too_old",
+        "hire_date_before_birth",
+        "snils_missing"
+      ]
+    },
+    {
+      "row": 67,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 68,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 69,
+      "status": "corrupt",
+      "defects": [
+        "inn_wrong_length",
+        "position_not_in_dict"
+      ]
+    },
+    {
+      "row": 70,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 71,
+      "status": "corrupt",
+      "defects": [
+        "salary_below_mrot",
+        "snils_missing"
+      ]
+    },
+    {
+      "row": 72,
+      "status": "corrupt",
+      "defects": [
+        "hire_date_bad_format",
+        "gender_invalid"
+      ]
+    },
+    {
+      "row": 73,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 74,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 75,
+      "status": "corrupt",
+      "defects": [
+        "passport_number_short",
+        "position_not_in_dict"
+      ]
+    },
+    {
+      "row": 76,
+      "status": "corrupt",
+      "defects": [
+        "inn_missing",
+        "snils_bad_checksum"
+      ]
+    },
+    {
+      "row": 77,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 78,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 79,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 80,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 81,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 82,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 83,
+      "status": "corrupt",
+      "defects": [
+        "inn_bad_checksum",
+        "gender_invalid"
+      ]
+    },
+    {
+      "row": 84,
+      "status": "corrupt",
+      "defects": [
+        "hire_date_before_birth",
+        "salary_huge",
+        "passport_letters"
+      ]
+    },
+    {
+      "row": 85,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 86,
+      "status": "corrupt",
+      "defects": [
+        "salary_below_mrot",
+        "inn_missing",
+        "gender_invalid"
+      ]
+    },
+    {
+      "row": 87,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 88,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 89,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 90,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 91,
+      "status": "corrupt",
+      "defects": [
+        "hire_date_future",
+        "salary_negative",
+        "gender_invalid"
+      ]
+    },
+    {
+      "row": 92,
+      "status": "corrupt",
+      "defects": [
+        "passport_letters",
+        "gender_invalid"
+      ]
+    },
+    {
+      "row": 93,
+      "status": "corrupt",
+      "defects": [
+        "birth_date_bad_format",
+        "position_not_in_dict"
+      ]
+    },
+    {
+      "row": 94,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 95,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 96,
+      "status": "corrupt",
+      "defects": [
+        "inn_missing"
+      ]
+    },
+    {
+      "row": 97,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 98,
+      "status": "corrupt",
+      "defects": [
+        "salary_string",
+        "gender_invalid"
+      ]
+    },
+    {
+      "row": 99,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 100,
+      "status": "corrupt",
+      "defects": [
+        "salary_missing",
+        "inn_wrong_length",
+        "position_not_in_dict"
+      ]
+    },
+    {
+      "row": 101,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 102,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 103,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 104,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 105,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 106,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 107,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 108,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 109,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 110,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 111,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 112,
+      "status": "corrupt",
+      "defects": [
+        "salary_zero",
+        "gender_invalid",
+        "position_not_in_dict"
+      ]
+    },
+    {
+      "row": 113,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 114,
+      "status": "corrupt",
+      "defects": [
+        "birth_date_future",
+        "inn_bad_checksum"
+      ]
+    },
+    {
+      "row": 115,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 116,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 117,
+      "status": "corrupt",
+      "defects": [
+        "position_not_in_dict"
+      ]
+    },
+    {
+      "row": 118,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 119,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 120,
+      "status": "corrupt",
+      "defects": [
+        "inn_bad_checksum"
+      ]
+    },
+    {
+      "row": 121,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 122,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 123,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 124,
+      "status": "corrupt",
+      "defects": [
+        "gender_invalid",
+        "position_not_in_dict"
+      ]
+    },
+    {
+      "row": 125,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 126,
+      "status": "corrupt",
+      "defects": [
+        "birth_date_bad_format",
+        "gender_invalid"
+      ]
+    },
+    {
+      "row": 127,
+      "status": "corrupt",
+      "defects": [
+        "birth_date_future",
+        "snils_missing",
+        "position_not_in_dict"
+      ]
+    },
+    {
+      "row": 128,
+      "status": "corrupt",
+      "defects": [
+        "snils_missing",
+        "position_not_in_dict"
+      ]
+    },
+    {
+      "row": 129,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 130,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 131,
+      "status": "corrupt",
+      "defects": [
+        "passport_series_long",
+        "gender_invalid"
+      ]
+    },
+    {
+      "row": 132,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 133,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 134,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 135,
+      "status": "corrupt",
+      "defects": [
+        "birth_date_bad_format",
+        "position_not_in_dict"
+      ]
+    },
+    {
+      "row": 136,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 137,
+      "status": "corrupt",
+      "defects": [
+        "salary_missing",
+        "passport_missing",
+        "inn_wrong_length"
+      ]
+    },
+    {
+      "row": 138,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 139,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 140,
+      "status": "corrupt",
+      "defects": [
+        "birth_date_underage",
+        "passport_letters"
+      ]
+    },
+    {
+      "row": 141,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 142,
+      "status": "corrupt",
+      "defects": [
+        "birth_date_too_old",
+        "salary_missing"
+      ]
+    },
+    {
+      "row": 143,
+      "status": "corrupt",
+      "defects": [
+        "position_not_in_dict"
+      ]
+    },
+    {
+      "row": 144,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 145,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 146,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 147,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 148,
+      "status": "corrupt",
+      "defects": [
+        "hire_date_before_birth",
+        "passport_number_short",
+        "inn_bad_checksum"
+      ]
+    },
+    {
+      "row": 149,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 150,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 151,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 152,
+      "status": "corrupt",
+      "defects": [
+        "hire_date_before_birth",
+        "salary_below_mrot",
+        "position_not_in_dict"
+      ]
+    },
+    {
+      "row": 153,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 154,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 155,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 156,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 157,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 158,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 159,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 160,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 161,
+      "status": "corrupt",
+      "defects": [
+        "birth_date_bad_format",
+        "hire_date_bad_format",
+        "inn_missing"
+      ]
+    },
+    {
+      "row": 162,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 163,
+      "status": "corrupt",
+      "defects": [
+        "birth_date_future",
+        "salary_missing",
+        "passport_letters"
+      ]
+    },
+    {
+      "row": 164,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 165,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 166,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 167,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 168,
+      "status": "corrupt",
+      "defects": [
+        "birth_date_too_old",
+        "hire_date_bad_format"
+      ]
+    },
+    {
+      "row": 169,
+      "status": "corrupt",
+      "defects": [
+        "hire_date_bad_format"
+      ]
+    },
+    {
+      "row": 170,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 171,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 172,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 173,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 174,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 175,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 176,
+      "status": "corrupt",
+      "defects": [
+        "hire_date_future",
+        "inn_missing",
+        "gender_invalid"
+      ]
+    },
+    {
+      "row": 177,
+      "status": "corrupt",
+      "defects": [
+        "birth_date_too_old",
+        "salary_below_mrot",
+        "gender_invalid"
+      ]
+    },
+    {
+      "row": 178,
+      "status": "corrupt",
+      "defects": [
+        "gender_invalid"
+      ]
+    },
+    {
+      "row": 179,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 180,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 181,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 182,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 183,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 184,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 185,
+      "status": "corrupt",
+      "defects": [
+        "position_not_in_dict"
+      ]
+    },
+    {
+      "row": 186,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 187,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 188,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 189,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 190,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 191,
+      "status": "corrupt",
+      "defects": [
+        "inn_wrong_length",
+        "gender_invalid",
+        "position_not_in_dict"
+      ]
+    },
+    {
+      "row": 192,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 193,
+      "status": "corrupt",
+      "defects": [
+        "passport_number_short"
+      ]
+    },
+    {
+      "row": 194,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 195,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 196,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 197,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 198,
+      "status": "corrupt",
+      "defects": [
+        "inn_wrong_length"
+      ]
+    },
+    {
+      "row": 199,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 200,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 201,
+      "status": "corrupt",
+      "defects": [
+        "snils_bad_checksum",
+        "gender_invalid",
+        "position_not_in_dict"
+      ]
+    },
+    {
+      "row": 202,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 203,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 204,
+      "status": "corrupt",
+      "defects": [
+        "birth_date_bad_format",
+        "inn_missing"
+      ]
+    },
+    {
+      "row": 205,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 206,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 207,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 208,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 209,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 210,
+      "status": "corrupt",
+      "defects": [
+        "passport_series_short",
+        "inn_bad_checksum",
+        "position_not_in_dict"
+      ]
+    },
+    {
+      "row": 211,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 212,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 213,
+      "status": "corrupt",
+      "defects": [
+        "passport_missing",
+        "inn_wrong_length",
+        "gender_invalid"
+      ]
+    },
+    {
+      "row": 214,
+      "status": "corrupt",
+      "defects": [
+        "inn_wrong_length"
+      ]
+    },
+    {
+      "row": 215,
+      "status": "corrupt",
+      "defects": [
+        "salary_below_mrot",
+        "gender_invalid"
+      ]
+    },
+    {
+      "row": 216,
+      "status": "corrupt",
+      "defects": [
+        "salary_below_mrot",
+        "position_not_in_dict"
+      ]
+    },
+    {
+      "row": 217,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 218,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 219,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 220,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 221,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 222,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 223,
+      "status": "corrupt",
+      "defects": [
+        "birth_date_bad_format",
+        "snils_missing",
+        "position_not_in_dict"
+      ]
+    },
+    {
+      "row": 224,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 225,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 226,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 227,
+      "status": "corrupt",
+      "defects": [
+        "birth_date_future",
+        "hire_date_future",
+        "salary_huge"
+      ]
+    },
+    {
+      "row": 228,
+      "status": "corrupt",
+      "defects": [
+        "salary_negative"
+      ]
+    },
+    {
+      "row": 229,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 230,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 231,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 232,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 233,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 234,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 235,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 236,
+      "status": "corrupt",
+      "defects": [
+        "birth_date_future"
+      ]
+    },
+    {
+      "row": 237,
+      "status": "corrupt",
+      "defects": [
+        "passport_missing",
+        "inn_bad_checksum"
+      ]
+    },
+    {
+      "row": 238,
+      "status": "corrupt",
+      "defects": [
+        "passport_missing",
+        "snils_bad_checksum",
+        "gender_invalid"
+      ]
+    },
+    {
+      "row": 239,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 240,
+      "status": "corrupt",
+      "defects": [
+        "inn_wrong_length",
+        "snils_missing"
+      ]
+    },
+    {
+      "row": 241,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 242,
+      "status": "corrupt",
+      "defects": [
+        "salary_negative"
+      ]
+    },
+    {
+      "row": 243,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 244,
+      "status": "corrupt",
+      "defects": [
+        "hire_date_before_birth",
+        "inn_missing",
+        "gender_invalid"
+      ]
+    },
+    {
+      "row": 245,
+      "status": "corrupt",
+      "defects": [
+        "birth_date_too_old",
+        "salary_missing"
+      ]
+    },
+    {
+      "row": 246,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 247,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 248,
+      "status": "corrupt",
+      "defects": [
+        "hire_date_bad_format",
+        "salary_string",
+        "position_not_in_dict"
+      ]
+    },
+    {
+      "row": 249,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 250,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 251,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 252,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 253,
+      "status": "corrupt",
+      "defects": [
+        "birth_date_underage",
+        "position_not_in_dict"
+      ]
+    },
+    {
+      "row": 254,
+      "status": "corrupt",
+      "defects": [
+        "birth_date_underage",
+        "salary_zero",
+        "position_not_in_dict"
+      ]
+    },
+    {
+      "row": 255,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 256,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 257,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 258,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 259,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 260,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 261,
+      "status": "corrupt",
+      "defects": [
+        "birth_date_underage",
+        "inn_wrong_length",
+        "gender_invalid"
+      ]
+    },
+    {
+      "row": 262,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 263,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 264,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 265,
+      "status": "corrupt",
+      "defects": [
+        "inn_missing",
+        "snils_bad_checksum",
+        "position_not_in_dict"
+      ]
+    },
+    {
+      "row": 266,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 267,
+      "status": "corrupt",
+      "defects": [
+        "position_not_in_dict"
+      ]
+    },
+    {
+      "row": 268,
+      "status": "corrupt",
+      "defects": [
+        "gender_invalid"
+      ]
+    },
+    {
+      "row": 269,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 270,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 271,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 272,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 273,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 274,
+      "status": "corrupt",
+      "defects": [
+        "position_not_in_dict"
+      ]
+    },
+    {
+      "row": 275,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 276,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 277,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 278,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 279,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 280,
+      "status": "corrupt",
+      "defects": [
+        "birth_date_bad_format",
+        "inn_wrong_length",
+        "position_not_in_dict"
+      ]
+    },
+    {
+      "row": 281,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 282,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 283,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 284,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 285,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 286,
+      "status": "corrupt",
+      "defects": [
+        "birth_date_underage",
+        "snils_bad_checksum"
+      ]
+    },
+    {
+      "row": 287,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 288,
+      "status": "corrupt",
+      "defects": [
+        "position_not_in_dict"
+      ]
+    },
+    {
+      "row": 289,
+      "status": "corrupt",
+      "defects": [
+        "gender_invalid"
+      ]
+    },
+    {
+      "row": 290,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 291,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 292,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 293,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 294,
+      "status": "corrupt",
+      "defects": [
+        "salary_huge",
+        "position_not_in_dict"
+      ]
+    },
+    {
+      "row": 295,
+      "status": "corrupt",
+      "defects": [
+        "birth_date_too_old",
+        "inn_bad_checksum",
+        "snils_missing"
+      ]
+    },
+    {
+      "row": 296,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 297,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 298,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 299,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 300,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 301,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 302,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 303,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 304,
+      "status": "corrupt",
+      "defects": [
+        "birth_date_underage",
+        "inn_missing",
+        "position_not_in_dict"
+      ]
+    },
+    {
+      "row": 305,
+      "status": "corrupt",
+      "defects": [
+        "salary_zero",
+        "passport_missing",
+        "position_not_in_dict"
+      ]
+    },
+    {
+      "row": 306,
+      "status": "corrupt",
+      "defects": [
+        "birth_date_too_old",
+        "passport_letters",
+        "inn_missing"
+      ]
+    },
+    {
+      "row": 307,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 308,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 309,
+      "status": "corrupt",
+      "defects": [
+        "inn_missing",
+        "gender_invalid"
+      ]
+    },
+    {
+      "row": 310,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 311,
+      "status": "corrupt",
+      "defects": [
+        "gender_invalid",
+        "position_not_in_dict"
+      ]
+    },
+    {
+      "row": 312,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 313,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 314,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 315,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 316,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 317,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 318,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 319,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 320,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 321,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 322,
+      "status": "corrupt",
+      "defects": [
+        "salary_missing",
+        "passport_series_long",
+        "gender_invalid"
+      ]
+    },
+    {
+      "row": 323,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 324,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 325,
+      "status": "corrupt",
+      "defects": [
+        "passport_series_long"
+      ]
+    },
+    {
+      "row": 326,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 327,
+      "status": "corrupt",
+      "defects": [
+        "inn_wrong_length",
+        "snils_missing"
+      ]
+    },
+    {
+      "row": 328,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 329,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 330,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 331,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 332,
+      "status": "corrupt",
+      "defects": [
+        "salary_below_mrot"
+      ]
+    },
+    {
+      "row": 333,
+      "status": "corrupt",
+      "defects": [
+        "birth_date_too_old"
+      ]
+    },
+    {
+      "row": 334,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 335,
+      "status": "corrupt",
+      "defects": [
+        "salary_huge",
+        "inn_bad_checksum"
+      ]
+    },
+    {
+      "row": 336,
+      "status": "corrupt",
+      "defects": [
+        "birth_date_bad_format",
+        "hire_date_bad_format",
+        "salary_negative"
+      ]
+    },
+    {
+      "row": 337,
+      "status": "corrupt",
+      "defects": [
+        "snils_bad_checksum"
+      ]
+    },
+    {
+      "row": 338,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 339,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 340,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 341,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 342,
+      "status": "corrupt",
+      "defects": [
+        "salary_negative",
+        "snils_bad_checksum"
+      ]
+    },
+    {
+      "row": 343,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 344,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 345,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 346,
+      "status": "corrupt",
+      "defects": [
+        "salary_below_mrot",
+        "snils_bad_checksum"
+      ]
+    },
+    {
+      "row": 347,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 348,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 349,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 350,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 351,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 352,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 353,
+      "status": "corrupt",
+      "defects": [
+        "inn_wrong_length",
+        "gender_invalid"
+      ]
+    },
+    {
+      "row": 354,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 355,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 356,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 357,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 358,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 359,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 360,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 361,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 362,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 363,
+      "status": "corrupt",
+      "defects": [
+        "gender_invalid"
+      ]
+    },
+    {
+      "row": 364,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 365,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 366,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 367,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 368,
+      "status": "corrupt",
+      "defects": [
+        "hire_date_future",
+        "gender_invalid",
+        "position_not_in_dict"
+      ]
+    },
+    {
+      "row": 369,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 370,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 371,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 372,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 373,
+      "status": "corrupt",
+      "defects": [
+        "position_not_in_dict"
+      ]
+    },
+    {
+      "row": 374,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 375,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 376,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 377,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 378,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 379,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 380,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 381,
+      "status": "corrupt",
+      "defects": [
+        "gender_invalid",
+        "position_not_in_dict"
+      ]
+    },
+    {
+      "row": 382,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 383,
+      "status": "corrupt",
+      "defects": [
+        "birth_date_too_old",
+        "salary_string",
+        "position_not_in_dict"
+      ]
+    },
+    {
+      "row": 384,
+      "status": "corrupt",
+      "defects": [
+        "gender_invalid"
+      ]
+    },
+    {
+      "row": 385,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 386,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 387,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 388,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 389,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 390,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 391,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 392,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 393,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 394,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 395,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 396,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 397,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 398,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 399,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 400,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 401,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 402,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 403,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 404,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 405,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 406,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 407,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 408,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 409,
+      "status": "corrupt",
+      "defects": [
+        "salary_zero",
+        "passport_missing",
+        "inn_wrong_length"
+      ]
+    },
+    {
+      "row": 410,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 411,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 412,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 413,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 414,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 415,
+      "status": "corrupt",
+      "defects": [
+        "hire_date_bad_format",
+        "position_not_in_dict"
+      ]
+    },
+    {
+      "row": 416,
+      "status": "corrupt",
+      "defects": [
+        "snils_missing"
+      ]
+    },
+    {
+      "row": 417,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 418,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 419,
+      "status": "corrupt",
+      "defects": [
+        "birth_date_future",
+        "hire_date_future",
+        "salary_string"
+      ]
+    },
+    {
+      "row": 420,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 421,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 422,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 423,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 424,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 425,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 426,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 427,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 428,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 429,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 430,
+      "status": "corrupt",
+      "defects": [
+        "passport_missing",
+        "gender_invalid",
+        "position_not_in_dict"
+      ]
+    },
+    {
+      "row": 431,
+      "status": "corrupt",
+      "defects": [
+        "hire_date_before_birth",
+        "passport_series_long"
+      ]
+    },
+    {
+      "row": 432,
+      "status": "corrupt",
+      "defects": [
+        "birth_date_future"
+      ]
+    },
+    {
+      "row": 433,
+      "status": "corrupt",
+      "defects": [
+        "hire_date_before_birth",
+        "salary_missing"
+      ]
+    },
+    {
+      "row": 434,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 435,
+      "status": "corrupt",
+      "defects": [
+        "salary_below_mrot",
+        "snils_bad_checksum"
+      ]
+    },
+    {
+      "row": 436,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 437,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 438,
+      "status": "corrupt",
+      "defects": [
+        "inn_wrong_length",
+        "gender_invalid",
+        "position_not_in_dict"
+      ]
+    },
+    {
+      "row": 439,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 440,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 441,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 442,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 443,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 444,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 445,
+      "status": "corrupt",
+      "defects": [
+        "gender_invalid"
+      ]
+    },
+    {
+      "row": 446,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 447,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 448,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 449,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 450,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 451,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 452,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 453,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 454,
+      "status": "corrupt",
+      "defects": [
+        "hire_date_bad_format",
+        "inn_bad_checksum"
+      ]
+    },
+    {
+      "row": 455,
+      "status": "corrupt",
+      "defects": [
+        "birth_date_underage",
+        "inn_bad_checksum",
+        "snils_bad_checksum"
+      ]
+    },
+    {
+      "row": 456,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 457,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 458,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 459,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 460,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 461,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 462,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 463,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 464,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 465,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 466,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 467,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 468,
+      "status": "corrupt",
+      "defects": [
+        "passport_series_short",
+        "inn_missing"
+      ]
+    },
+    {
+      "row": 469,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 470,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 471,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 472,
+      "status": "corrupt",
+      "defects": [
+        "hire_date_bad_format",
+        "gender_invalid",
+        "position_not_in_dict"
+      ]
+    },
+    {
+      "row": 473,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 474,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 475,
+      "status": "corrupt",
+      "defects": [
+        "salary_below_mrot",
+        "passport_series_short",
+        "gender_invalid"
+      ]
+    },
+    {
+      "row": 476,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 477,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 478,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 479,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 480,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 481,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 482,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 483,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 484,
+      "status": "corrupt",
+      "defects": [
+        "gender_invalid",
+        "position_not_in_dict"
+      ]
+    },
+    {
+      "row": 485,
+      "status": "corrupt",
+      "defects": [
+        "salary_below_mrot",
+        "inn_missing"
+      ]
+    },
+    {
+      "row": 486,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 487,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 488,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 489,
+      "status": "corrupt",
+      "defects": [
+        "birth_date_too_old",
+        "snils_missing"
+      ]
+    },
+    {
+      "row": 490,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 491,
+      "status": "corrupt",
+      "defects": [
+        "passport_series_short",
+        "snils_missing"
+      ]
+    },
+    {
+      "row": 492,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 493,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 494,
+      "status": "corrupt",
+      "defects": [
+        "hire_date_bad_format"
+      ]
+    },
+    {
+      "row": 495,
+      "status": "corrupt",
+      "defects": [
+        "salary_missing",
+        "position_not_in_dict"
+      ]
+    },
+    {
+      "row": 496,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 497,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 498,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 499,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 500,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 501,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 502,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 503,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 504,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 505,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 506,
+      "status": "corrupt",
+      "defects": [
+        "position_not_in_dict"
+      ]
+    },
+    {
+      "row": 507,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 508,
+      "status": "corrupt",
+      "defects": [
+        "salary_negative",
+        "inn_wrong_length",
+        "position_not_in_dict"
+      ]
+    },
+    {
+      "row": 509,
+      "status": "corrupt",
+      "defects": [
+        "inn_bad_checksum",
+        "position_not_in_dict"
+      ]
+    },
+    {
+      "row": 510,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 511,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 512,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 513,
+      "status": "corrupt",
+      "defects": [
+        "birth_date_too_old",
+        "salary_missing",
+        "passport_number_short"
+      ]
+    },
+    {
+      "row": 514,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 515,
+      "status": "corrupt",
+      "defects": [
+        "hire_date_future"
+      ]
+    },
+    {
+      "row": 516,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 517,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 518,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 519,
+      "status": "corrupt",
+      "defects": [
+        "salary_zero"
+      ]
+    },
+    {
+      "row": 520,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 521,
+      "status": "corrupt",
+      "defects": [
+        "salary_zero",
+        "inn_wrong_length"
+      ]
+    },
+    {
+      "row": 522,
+      "status": "corrupt",
+      "defects": [
+        "salary_huge",
+        "gender_invalid"
+      ]
+    },
+    {
+      "row": 523,
+      "status": "corrupt",
+      "defects": [
+        "birth_date_future",
+        "passport_letters",
+        "position_not_in_dict"
+      ]
+    },
+    {
+      "row": 524,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 525,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 526,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 527,
+      "status": "corrupt",
+      "defects": [
+        "position_not_in_dict"
+      ]
+    },
+    {
+      "row": 528,
+      "status": "corrupt",
+      "defects": [
+        "birth_date_bad_format"
+      ]
+    },
+    {
+      "row": 529,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 530,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 531,
+      "status": "corrupt",
+      "defects": [
+        "hire_date_future",
+        "snils_missing",
+        "gender_invalid"
+      ]
+    },
+    {
+      "row": 532,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 533,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 534,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 535,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 536,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 537,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 538,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 539,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 540,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 541,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 542,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 543,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 544,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 545,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 546,
+      "status": "corrupt",
+      "defects": [
+        "birth_date_underage"
+      ]
+    },
+    {
+      "row": 547,
+      "status": "corrupt",
+      "defects": [
+        "hire_date_before_birth",
+        "salary_negative",
+        "passport_letters"
+      ]
+    },
+    {
+      "row": 548,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 549,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 550,
+      "status": "corrupt",
+      "defects": [
+        "birth_date_too_old",
+        "passport_number_short"
+      ]
+    },
+    {
+      "row": 551,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 552,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 553,
+      "status": "corrupt",
+      "defects": [
+        "passport_missing",
+        "position_not_in_dict"
+      ]
+    },
+    {
+      "row": 554,
+      "status": "corrupt",
+      "defects": [
+        "hire_date_future",
+        "snils_missing"
+      ]
+    },
+    {
+      "row": 555,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 556,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 557,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 558,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 559,
+      "status": "corrupt",
+      "defects": [
+        "birth_date_underage"
+      ]
+    },
+    {
+      "row": 560,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 561,
+      "status": "corrupt",
+      "defects": [
+        "gender_invalid",
+        "position_not_in_dict"
+      ]
+    },
+    {
+      "row": 562,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 563,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 564,
+      "status": "corrupt",
+      "defects": [
+        "passport_missing"
+      ]
+    },
+    {
+      "row": 565,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 566,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 567,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 568,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 569,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 570,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 571,
+      "status": "corrupt",
+      "defects": [
+        "birth_date_underage",
+        "hire_date_future",
+        "gender_invalid"
+      ]
+    },
+    {
+      "row": 572,
+      "status": "corrupt",
+      "defects": [
+        "passport_missing",
+        "position_not_in_dict"
+      ]
+    },
+    {
+      "row": 573,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 574,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 575,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 576,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 577,
+      "status": "corrupt",
+      "defects": [
+        "birth_date_too_old",
+        "passport_series_short"
+      ]
+    },
+    {
+      "row": 578,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 579,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 580,
+      "status": "corrupt",
+      "defects": [
+        "inn_missing",
+        "gender_invalid",
+        "position_not_in_dict"
+      ]
+    },
+    {
+      "row": 581,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 582,
+      "status": "corrupt",
+      "defects": [
+        "birth_date_underage",
+        "salary_below_mrot"
+      ]
+    },
+    {
+      "row": 583,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 584,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 585,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 586,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 587,
+      "status": "corrupt",
+      "defects": [
+        "passport_missing",
+        "snils_missing",
+        "position_not_in_dict"
+      ]
+    },
+    {
+      "row": 588,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 589,
+      "status": "corrupt",
+      "defects": [
+        "birth_date_future",
+        "inn_wrong_length"
+      ]
+    },
+    {
+      "row": 590,
+      "status": "corrupt",
+      "defects": [
+        "position_not_in_dict"
+      ]
+    },
+    {
+      "row": 591,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 592,
+      "status": "corrupt",
+      "defects": [
+        "position_not_in_dict"
+      ]
+    },
+    {
+      "row": 593,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 594,
+      "status": "corrupt",
+      "defects": [
+        "salary_string",
+        "snils_bad_checksum",
+        "position_not_in_dict"
+      ]
+    },
+    {
+      "row": 595,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 596,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 597,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 598,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 599,
+      "status": "corrupt",
+      "defects": [
+        "passport_letters"
+      ]
+    },
+    {
+      "row": 600,
+      "status": "corrupt",
+      "defects": [
+        "position_not_in_dict"
+      ]
+    },
+    {
+      "row": 601,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 602,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 603,
+      "status": "corrupt",
+      "defects": [
+        "birth_date_bad_format",
+        "inn_missing",
+        "position_not_in_dict"
+      ]
+    },
+    {
+      "row": 604,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 605,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 606,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 607,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 608,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 609,
+      "status": "corrupt",
+      "defects": [
+        "passport_missing",
+        "position_not_in_dict"
+      ]
+    },
+    {
+      "row": 610,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 611,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 612,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 613,
+      "status": "corrupt",
+      "defects": [
+        "salary_huge"
+      ]
+    },
+    {
+      "row": 614,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 615,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 616,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 617,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 618,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 619,
+      "status": "corrupt",
+      "defects": [
+        "salary_below_mrot",
+        "passport_missing"
+      ]
+    },
+    {
+      "row": 620,
+      "status": "corrupt",
+      "defects": [
+        "birth_date_bad_format",
+        "inn_bad_checksum"
+      ]
+    },
+    {
+      "row": 621,
+      "status": "corrupt",
+      "defects": [
+        "hire_date_before_birth",
+        "snils_bad_checksum"
+      ]
+    },
+    {
+      "row": 622,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 623,
+      "status": "corrupt",
+      "defects": [
+        "hire_date_future",
+        "snils_missing",
+        "position_not_in_dict"
+      ]
+    },
+    {
+      "row": 624,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 625,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 626,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 627,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 628,
+      "status": "corrupt",
+      "defects": [
+        "passport_missing",
+        "gender_invalid"
+      ]
+    },
+    {
+      "row": 629,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 630,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 631,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 632,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 633,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 634,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 635,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 636,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 637,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 638,
+      "status": "corrupt",
+      "defects": [
+        "birth_date_too_old",
+        "gender_invalid",
+        "position_not_in_dict"
+      ]
+    },
+    {
+      "row": 639,
+      "status": "corrupt",
+      "defects": [
+        "gender_invalid",
+        "position_not_in_dict"
+      ]
+    },
+    {
+      "row": 640,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 641,
+      "status": "corrupt",
+      "defects": [
+        "hire_date_future",
+        "salary_missing",
+        "gender_invalid"
+      ]
+    },
+    {
+      "row": 642,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 643,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 644,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 645,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 646,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 647,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 648,
+      "status": "corrupt",
+      "defects": [
+        "birth_date_future",
+        "passport_series_long"
+      ]
+    },
+    {
+      "row": 649,
+      "status": "corrupt",
+      "defects": [
+        "birth_date_underage",
+        "position_not_in_dict"
+      ]
+    },
+    {
+      "row": 650,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 651,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 652,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 653,
+      "status": "corrupt",
+      "defects": [
+        "salary_zero"
+      ]
+    },
+    {
+      "row": 654,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 655,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 656,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 657,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 658,
+      "status": "corrupt",
+      "defects": [
+        "hire_date_before_birth",
+        "salary_below_mrot",
+        "gender_invalid"
+      ]
+    },
+    {
+      "row": 659,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 660,
+      "status": "corrupt",
+      "defects": [
+        "inn_bad_checksum",
+        "gender_invalid"
+      ]
+    },
+    {
+      "row": 661,
+      "status": "corrupt",
+      "defects": [
+        "hire_date_bad_format"
+      ]
+    },
+    {
+      "row": 662,
+      "status": "corrupt",
+      "defects": [
+        "gender_invalid",
+        "position_not_in_dict"
+      ]
+    },
+    {
+      "row": 663,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 664,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 665,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 666,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 667,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 668,
+      "status": "corrupt",
+      "defects": [
+        "inn_wrong_length"
+      ]
+    },
+    {
+      "row": 669,
+      "status": "corrupt",
+      "defects": [
+        "birth_date_bad_format",
+        "hire_date_future"
+      ]
+    },
+    {
+      "row": 670,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 671,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 672,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 673,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 674,
+      "status": "corrupt",
+      "defects": [
+        "hire_date_future",
+        "salary_huge",
+        "passport_number_short"
+      ]
+    },
+    {
+      "row": 675,
+      "status": "corrupt",
+      "defects": [
+        "birth_date_underage",
+        "salary_string",
+        "snils_missing"
+      ]
+    },
+    {
+      "row": 676,
+      "status": "corrupt",
+      "defects": [
+        "birth_date_future"
+      ]
+    },
+    {
+      "row": 677,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 678,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 679,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 680,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 681,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 682,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 683,
+      "status": "corrupt",
+      "defects": [
+        "passport_number_short",
+        "position_not_in_dict"
+      ]
+    },
+    {
+      "row": 684,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 685,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 686,
+      "status": "corrupt",
+      "defects": [
+        "inn_bad_checksum",
+        "snils_bad_checksum",
+        "position_not_in_dict"
+      ]
+    },
+    {
+      "row": 687,
+      "status": "corrupt",
+      "defects": [
+        "passport_series_short"
+      ]
+    },
+    {
+      "row": 688,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 689,
+      "status": "corrupt",
+      "defects": [
+        "hire_date_bad_format"
+      ]
+    },
+    {
+      "row": 690,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 691,
+      "status": "corrupt",
+      "defects": [
+        "birth_date_underage",
+        "inn_bad_checksum",
+        "position_not_in_dict"
+      ]
+    },
+    {
+      "row": 692,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 693,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 694,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 695,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 696,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 697,
+      "status": "corrupt",
+      "defects": [
+        "passport_missing",
+        "snils_missing"
+      ]
+    },
+    {
+      "row": 698,
+      "status": "corrupt",
+      "defects": [
+        "birth_date_bad_format",
+        "salary_below_mrot",
+        "position_not_in_dict"
+      ]
+    },
+    {
+      "row": 699,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 700,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 701,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 702,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 703,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 704,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 705,
+      "status": "corrupt",
+      "defects": [
+        "inn_missing",
+        "snils_bad_checksum",
+        "gender_invalid"
+      ]
+    },
+    {
+      "row": 706,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 707,
+      "status": "corrupt",
+      "defects": [
+        "hire_date_bad_format",
+        "gender_invalid",
+        "position_not_in_dict"
+      ]
+    },
+    {
+      "row": 708,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 709,
+      "status": "corrupt",
+      "defects": [
+        "passport_series_short"
+      ]
+    },
+    {
+      "row": 710,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 711,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 712,
+      "status": "corrupt",
+      "defects": [
+        "snils_bad_checksum",
+        "gender_invalid"
+      ]
+    },
+    {
+      "row": 713,
+      "status": "corrupt",
+      "defects": [
+        "inn_bad_checksum",
+        "snils_bad_checksum"
+      ]
+    },
+    {
+      "row": 714,
+      "status": "corrupt",
+      "defects": [
+        "birth_date_future",
+        "snils_missing"
+      ]
+    },
+    {
+      "row": 715,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 716,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 717,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 718,
+      "status": "corrupt",
+      "defects": [
+        "birth_date_too_old"
+      ]
+    },
+    {
+      "row": 719,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 720,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 721,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 722,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 723,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 724,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 725,
+      "status": "corrupt",
+      "defects": [
+        "birth_date_future",
+        "hire_date_bad_format",
+        "snils_missing"
+      ]
+    },
+    {
+      "row": 726,
+      "status": "corrupt",
+      "defects": [
+        "birth_date_bad_format"
+      ]
+    },
+    {
+      "row": 727,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 728,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 729,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 730,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 731,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 732,
+      "status": "corrupt",
+      "defects": [
+        "birth_date_too_old",
+        "inn_missing"
+      ]
+    },
+    {
+      "row": 733,
+      "status": "corrupt",
+      "defects": [
+        "hire_date_bad_format",
+        "inn_wrong_length",
+        "gender_invalid"
+      ]
+    },
+    {
+      "row": 734,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 735,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 736,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 737,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 738,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 739,
+      "status": "corrupt",
+      "defects": [
+        "hire_date_before_birth"
+      ]
+    },
+    {
+      "row": 740,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 741,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 742,
+      "status": "corrupt",
+      "defects": [
+        "salary_below_mrot"
+      ]
+    },
+    {
+      "row": 743,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 744,
+      "status": "corrupt",
+      "defects": [
+        "birth_date_bad_format",
+        "passport_series_long"
+      ]
+    },
+    {
+      "row": 745,
+      "status": "corrupt",
+      "defects": [
+        "birth_date_too_old",
+        "inn_bad_checksum"
+      ]
+    },
+    {
+      "row": 746,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 747,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 748,
+      "status": "corrupt",
+      "defects": [
+        "birth_date_future",
+        "snils_missing",
+        "gender_invalid"
+      ]
+    },
+    {
+      "row": 749,
+      "status": "corrupt",
+      "defects": [
+        "birth_date_underage",
+        "hire_date_bad_format",
+        "salary_below_mrot"
+      ]
+    },
+    {
+      "row": 750,
+      "status": "corrupt",
+      "defects": [
+        "snils_missing"
+      ]
+    },
+    {
+      "row": 751,
+      "status": "corrupt",
+      "defects": [
+        "birth_date_future"
+      ]
+    },
+    {
+      "row": 752,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 753,
+      "status": "corrupt",
+      "defects": [
+        "position_not_in_dict"
+      ]
+    },
+    {
+      "row": 754,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 755,
+      "status": "corrupt",
+      "defects": [
+        "passport_number_short"
+      ]
+    },
+    {
+      "row": 756,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 757,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 758,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 759,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 760,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 761,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 762,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 763,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 764,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 765,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 766,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 767,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 768,
+      "status": "corrupt",
+      "defects": [
+        "birth_date_too_old",
+        "hire_date_future",
+        "salary_missing"
+      ]
+    },
+    {
+      "row": 769,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 770,
+      "status": "corrupt",
+      "defects": [
+        "birth_date_underage"
+      ]
+    },
+    {
+      "row": 771,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 772,
+      "status": "corrupt",
+      "defects": [
+        "hire_date_future"
+      ]
+    },
+    {
+      "row": 773,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 774,
+      "status": "corrupt",
+      "defects": [
+        "snils_bad_checksum",
+        "position_not_in_dict"
+      ]
+    },
+    {
+      "row": 775,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 776,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 777,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 778,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 779,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 780,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 781,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 782,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 783,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 784,
+      "status": "corrupt",
+      "defects": [
+        "birth_date_underage",
+        "snils_missing"
+      ]
+    },
+    {
+      "row": 785,
+      "status": "corrupt",
+      "defects": [
+        "birth_date_too_old",
+        "salary_huge"
+      ]
+    },
+    {
+      "row": 786,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 787,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 788,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 789,
+      "status": "corrupt",
+      "defects": [
+        "snils_bad_checksum"
+      ]
+    },
+    {
+      "row": 790,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 791,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 792,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 793,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 794,
+      "status": "corrupt",
+      "defects": [
+        "inn_bad_checksum"
+      ]
+    },
+    {
+      "row": 795,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 796,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 797,
+      "status": "corrupt",
+      "defects": [
+        "birth_date_too_old",
+        "position_not_in_dict"
+      ]
+    },
+    {
+      "row": 798,
+      "status": "corrupt",
+      "defects": [
+        "inn_wrong_length",
+        "snils_bad_checksum",
+        "position_not_in_dict"
+      ]
+    },
+    {
+      "row": 799,
+      "status": "corrupt",
+      "defects": [
+        "hire_date_bad_format",
+        "salary_zero"
+      ]
+    },
+    {
+      "row": 800,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 801,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 802,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 803,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 804,
+      "status": "corrupt",
+      "defects": [
+        "snils_bad_checksum"
+      ]
+    },
+    {
+      "row": 805,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 806,
+      "status": "corrupt",
+      "defects": [
+        "hire_date_before_birth",
+        "passport_letters",
+        "inn_wrong_length"
+      ]
+    },
+    {
+      "row": 807,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 808,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 809,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 810,
+      "status": "corrupt",
+      "defects": [
+        "hire_date_before_birth",
+        "position_not_in_dict"
+      ]
+    },
+    {
+      "row": 811,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 812,
+      "status": "corrupt",
+      "defects": [
+        "birth_date_underage",
+        "gender_invalid"
+      ]
+    },
+    {
+      "row": 813,
+      "status": "corrupt",
+      "defects": [
+        "salary_negative",
+        "position_not_in_dict"
+      ]
+    },
+    {
+      "row": 814,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 815,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 816,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 817,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 818,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 819,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 820,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 821,
+      "status": "corrupt",
+      "defects": [
+        "hire_date_before_birth",
+        "passport_number_short",
+        "inn_bad_checksum"
+      ]
+    },
+    {
+      "row": 822,
+      "status": "corrupt",
+      "defects": [
+        "hire_date_bad_format"
+      ]
+    },
+    {
+      "row": 823,
+      "status": "corrupt",
+      "defects": [
+        "snils_bad_checksum",
+        "position_not_in_dict"
+      ]
+    },
+    {
+      "row": 824,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 825,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 826,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 827,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 828,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 829,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 830,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 831,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 832,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 833,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 834,
+      "status": "corrupt",
+      "defects": [
+        "birth_date_underage"
+      ]
+    },
+    {
+      "row": 835,
+      "status": "corrupt",
+      "defects": [
+        "hire_date_future",
+        "inn_missing",
+        "snils_bad_checksum"
+      ]
+    },
+    {
+      "row": 836,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 837,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 838,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 839,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 840,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 841,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 842,
+      "status": "corrupt",
+      "defects": [
+        "salary_missing",
+        "snils_bad_checksum",
+        "gender_invalid"
+      ]
+    },
+    {
+      "row": 843,
+      "status": "corrupt",
+      "defects": [
+        "salary_huge",
+        "passport_letters",
+        "snils_missing"
+      ]
+    },
+    {
+      "row": 844,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 845,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 846,
+      "status": "corrupt",
+      "defects": [
+        "inn_missing"
+      ]
+    },
+    {
+      "row": 847,
+      "status": "corrupt",
+      "defects": [
+        "birth_date_future",
+        "inn_missing",
+        "position_not_in_dict"
+      ]
+    },
+    {
+      "row": 848,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 849,
+      "status": "corrupt",
+      "defects": [
+        "snils_missing"
+      ]
+    },
+    {
+      "row": 850,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 851,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 852,
+      "status": "corrupt",
+      "defects": [
+        "birth_date_too_old"
+      ]
+    },
+    {
+      "row": 853,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 854,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 855,
+      "status": "corrupt",
+      "defects": [
+        "snils_bad_checksum"
+      ]
+    },
+    {
+      "row": 856,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 857,
+      "status": "corrupt",
+      "defects": [
+        "birth_date_underage",
+        "gender_invalid",
+        "position_not_in_dict"
+      ]
+    },
+    {
+      "row": 858,
+      "status": "corrupt",
+      "defects": [
+        "hire_date_before_birth",
+        "passport_missing",
+        "inn_wrong_length"
+      ]
+    },
+    {
+      "row": 859,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 860,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 861,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 862,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 863,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 864,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 865,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 866,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 867,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 868,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 869,
+      "status": "corrupt",
+      "defects": [
+        "birth_date_underage",
+        "inn_bad_checksum",
+        "gender_invalid"
+      ]
+    },
+    {
+      "row": 870,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 871,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 872,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 873,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 874,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 875,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 876,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 877,
+      "status": "corrupt",
+      "defects": [
+        "salary_negative",
+        "gender_invalid",
+        "position_not_in_dict"
+      ]
+    },
+    {
+      "row": 878,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 879,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 880,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 881,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 882,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 883,
+      "status": "corrupt",
+      "defects": [
+        "position_not_in_dict"
+      ]
+    },
+    {
+      "row": 884,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 885,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 886,
+      "status": "corrupt",
+      "defects": [
+        "passport_missing"
+      ]
+    },
+    {
+      "row": 887,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 888,
+      "status": "corrupt",
+      "defects": [
+        "salary_huge"
+      ]
+    },
+    {
+      "row": 889,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 890,
+      "status": "corrupt",
+      "defects": [
+        "hire_date_before_birth",
+        "inn_bad_checksum",
+        "gender_invalid"
+      ]
+    },
+    {
+      "row": 891,
+      "status": "corrupt",
+      "defects": [
+        "birth_date_underage"
+      ]
+    },
+    {
+      "row": 892,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 893,
+      "status": "corrupt",
+      "defects": [
+        "hire_date_before_birth",
+        "inn_wrong_length",
+        "gender_invalid"
+      ]
+    },
+    {
+      "row": 894,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 895,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 896,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 897,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 898,
+      "status": "corrupt",
+      "defects": [
+        "birth_date_future",
+        "inn_bad_checksum",
+        "position_not_in_dict"
+      ]
+    },
+    {
+      "row": 899,
+      "status": "corrupt",
+      "defects": [
+        "salary_negative"
+      ]
+    },
+    {
+      "row": 900,
+      "status": "corrupt",
+      "defects": [
+        "birth_date_bad_format",
+        "snils_missing"
+      ]
+    },
+    {
+      "row": 901,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 902,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 903,
+      "status": "corrupt",
+      "defects": [
+        "inn_wrong_length"
+      ]
+    },
+    {
+      "row": 904,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 905,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 906,
+      "status": "corrupt",
+      "defects": [
+        "inn_missing",
+        "snils_missing"
+      ]
+    },
+    {
+      "row": 907,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 908,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 909,
+      "status": "corrupt",
+      "defects": [
+        "birth_date_future",
+        "salary_below_mrot",
+        "gender_invalid"
+      ]
+    },
+    {
+      "row": 910,
+      "status": "corrupt",
+      "defects": [
+        "salary_string",
+        "inn_missing",
+        "snils_bad_checksum"
+      ]
+    },
+    {
+      "row": 911,
+      "status": "corrupt",
+      "defects": [
+        "passport_series_long",
+        "position_not_in_dict"
+      ]
+    },
+    {
+      "row": 912,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 913,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 914,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 915,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 916,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 917,
+      "status": "corrupt",
+      "defects": [
+        "passport_series_short",
+        "position_not_in_dict"
+      ]
+    },
+    {
+      "row": 918,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 919,
+      "status": "corrupt",
+      "defects": [
+        "passport_series_short",
+        "inn_wrong_length",
+        "position_not_in_dict"
+      ]
+    },
+    {
+      "row": 920,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 921,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 922,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 923,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 924,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 925,
+      "status": "corrupt",
+      "defects": [
+        "birth_date_future",
+        "salary_negative",
+        "snils_missing"
+      ]
+    },
+    {
+      "row": 926,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 927,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 928,
+      "status": "corrupt",
+      "defects": [
+        "gender_invalid",
+        "position_not_in_dict"
+      ]
+    },
+    {
+      "row": 929,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 930,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 931,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 932,
+      "status": "corrupt",
+      "defects": [
+        "birth_date_too_old",
+        "salary_negative"
+      ]
+    },
+    {
+      "row": 933,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 934,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 935,
+      "status": "corrupt",
+      "defects": [
+        "passport_number_short",
+        "position_not_in_dict"
+      ]
+    },
+    {
+      "row": 936,
+      "status": "corrupt",
+      "defects": [
+        "salary_missing",
+        "snils_missing",
+        "gender_invalid"
+      ]
+    },
+    {
+      "row": 937,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 938,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 939,
+      "status": "corrupt",
+      "defects": [
+        "salary_negative",
+        "inn_missing",
+        "snils_missing"
+      ]
+    },
+    {
+      "row": 940,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 941,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 942,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 943,
+      "status": "corrupt",
+      "defects": [
+        "inn_missing",
+        "snils_bad_checksum",
+        "gender_invalid"
+      ]
+    },
+    {
+      "row": 944,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 945,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 946,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 947,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 948,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 949,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 950,
+      "status": "corrupt",
+      "defects": [
+        "gender_invalid"
+      ]
+    },
+    {
+      "row": 951,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 952,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 953,
+      "status": "corrupt",
+      "defects": [
+        "salary_huge"
+      ]
+    },
+    {
+      "row": 954,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 955,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 956,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 957,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 958,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 959,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 960,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 961,
+      "status": "corrupt",
+      "defects": [
+        "gender_invalid"
+      ]
+    },
+    {
+      "row": 962,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 963,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 964,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 965,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 966,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 967,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 968,
+      "status": "corrupt",
+      "defects": [
+        "passport_series_long",
+        "inn_wrong_length"
+      ]
+    },
+    {
+      "row": 969,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 970,
+      "status": "corrupt",
+      "defects": [
+        "hire_date_bad_format",
+        "inn_bad_checksum"
+      ]
+    },
+    {
+      "row": 971,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 972,
+      "status": "corrupt",
+      "defects": [
+        "birth_date_underage",
+        "salary_negative",
+        "position_not_in_dict"
+      ]
+    },
+    {
+      "row": 973,
+      "status": "corrupt",
+      "defects": [
+        "hire_date_future",
+        "position_not_in_dict"
+      ]
+    },
+    {
+      "row": 974,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 975,
+      "status": "corrupt",
+      "defects": [
+        "salary_huge",
+        "passport_series_long",
+        "inn_bad_checksum"
+      ]
+    },
+    {
+      "row": 976,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 977,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 978,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 979,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 980,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 981,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 982,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 983,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 984,
+      "status": "corrupt",
+      "defects": [
+        "salary_below_mrot"
+      ]
+    },
+    {
+      "row": 985,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 986,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 987,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 988,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 989,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 990,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 991,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 992,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 993,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 994,
+      "status": "corrupt",
+      "defects": [
+        "birth_date_future",
+        "passport_missing",
+        "snils_bad_checksum"
+      ]
+    },
+    {
+      "row": 995,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 996,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 997,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 998,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 999,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 1000,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 1001,
+      "status": "corrupt",
+      "defects": [
+        "hire_date_before_birth",
+        "salary_below_mrot"
+      ]
+    },
+    {
+      "row": 1002,
+      "status": "duplicate",
+      "defects": [
+        "duplicate_record"
+      ],
+      "source_row": 787
+    },
+    {
+      "row": 1003,
+      "status": "duplicate",
+      "defects": [
+        "duplicate_record"
+      ],
+      "source_row": 494
+    },
+    {
+      "row": 1004,
+      "status": "duplicate",
+      "defects": [
+        "duplicate_record"
+      ],
+      "source_row": 950
+    },
+    {
+      "row": 1005,
+      "status": "duplicate",
+      "defects": [
+        "duplicate_record"
+      ],
+      "source_row": 520
+    },
+    {
+      "row": 1006,
+      "status": "duplicate",
+      "defects": [
+        "duplicate_record"
+      ],
+      "source_row": 656
+    },
+    {
+      "row": 1007,
+      "status": "duplicate",
+      "defects": [
+        "duplicate_record"
+      ],
+      "source_row": 737
+    },
+    {
+      "row": 1008,
+      "status": "duplicate",
+      "defects": [
+        "duplicate_record"
+      ],
+      "source_row": 83
+    },
+    {
+      "row": 1009,
+      "status": "duplicate",
+      "defects": [
+        "duplicate_record"
+      ],
+      "source_row": 582
+    },
+    {
+      "row": 1010,
+      "status": "duplicate",
+      "defects": [
+        "duplicate_record"
+      ],
+      "source_row": 174
+    },
+    {
+      "row": 1011,
+      "status": "duplicate",
+      "defects": [
+        "duplicate_record"
+      ],
+      "source_row": 460
+    },
+    {
+      "row": 1012,
+      "status": "duplicate",
+      "defects": [
+        "duplicate_record"
+      ],
+      "source_row": 429
+    },
+    {
+      "row": 1013,
+      "status": "duplicate",
+      "defects": [
+        "duplicate_record"
+      ],
+      "source_row": 734
+    },
+    {
+      "row": 1014,
+      "status": "duplicate",
+      "defects": [
+        "duplicate_record"
+      ],
+      "source_row": 226
+    },
+    {
+      "row": 1015,
+      "status": "duplicate",
+      "defects": [
+        "duplicate_record"
+      ],
+      "source_row": 883
+    },
+    {
+      "row": 1016,
+      "status": "duplicate",
+      "defects": [
+        "duplicate_record"
+      ],
+      "source_row": 919
+    },
+    {
+      "row": 1017,
+      "status": "duplicate",
+      "defects": [
+        "duplicate_record"
+      ],
+      "source_row": 565
+    },
+    {
+      "row": 1018,
+      "status": "duplicate",
+      "defects": [
+        "duplicate_record"
+      ],
+      "source_row": 14
+    },
+    {
+      "row": 1019,
+      "status": "duplicate",
+      "defects": [
+        "duplicate_record"
+      ],
+      "source_row": 720
+    },
+    {
+      "row": 1020,
+      "status": "duplicate",
+      "defects": [
+        "duplicate_record"
+      ],
+      "source_row": 408
+    },
+    {
+      "row": 1021,
+      "status": "duplicate",
+      "defects": [
+        "duplicate_record"
+      ],
+      "source_row": 405
+    },
+    {
+      "row": 1022,
+      "status": "duplicate",
+      "defects": [
+        "duplicate_record"
+      ],
+      "source_row": 709
+    },
+    {
+      "row": 1023,
+      "status": "duplicate",
+      "defects": [
+        "duplicate_record"
+      ],
+      "source_row": 983
+    },
+    {
+      "row": 1024,
+      "status": "duplicate",
+      "defects": [
+        "duplicate_record"
+      ],
+      "source_row": 191
+    },
+    {
+      "row": 1025,
+      "status": "duplicate",
+      "defects": [
+        "duplicate_record"
+      ],
+      "source_row": 280
+    },
+    {
+      "row": 1026,
+      "status": "duplicate",
+      "defects": [
+        "duplicate_record"
+      ],
+      "source_row": 131
+    },
+    {
+      "row": 1027,
+      "status": "duplicate",
+      "defects": [
+        "duplicate_record"
+      ],
+      "source_row": 874
+    },
+    {
+      "row": 1028,
+      "status": "duplicate",
+      "defects": [
+        "duplicate_record"
+      ],
+      "source_row": 161
+    },
+    {
+      "row": 1029,
+      "status": "duplicate",
+      "defects": [
+        "duplicate_record"
+      ],
+      "source_row": 912
+    },
+    {
+      "row": 1030,
+      "status": "duplicate",
+      "defects": [
+        "duplicate_record"
+      ],
+      "source_row": 536
+    },
+    {
+      "row": 1031,
+      "status": "duplicate",
+      "defects": [
+        "duplicate_record"
+      ],
+      "source_row": 148
+    },
+    {
+      "row": 1032,
+      "status": "duplicate",
+      "defects": [
+        "duplicate_record"
+      ],
+      "source_row": 69
+    },
+    {
+      "row": 1033,
+      "status": "duplicate",
+      "defects": [
+        "duplicate_record"
+      ],
+      "source_row": 25
+    },
+    {
+      "row": 1034,
+      "status": "duplicate",
+      "defects": [
+        "duplicate_record"
+      ],
+      "source_row": 634
+    },
+    {
+      "row": 1035,
+      "status": "duplicate",
+      "defects": [
+        "duplicate_record"
+      ],
+      "source_row": 173
+    },
+    {
+      "row": 1036,
+      "status": "duplicate",
+      "defects": [
+        "duplicate_record"
+      ],
+      "source_row": 794
+    },
+    {
+      "row": 1037,
+      "status": "duplicate",
+      "defects": [
+        "duplicate_record"
+      ],
+      "source_row": 607
+    },
+    {
+      "row": 1038,
+      "status": "duplicate",
+      "defects": [
+        "duplicate_record"
+      ],
+      "source_row": 107
+    },
+    {
+      "row": 1039,
+      "status": "duplicate",
+      "defects": [
+        "duplicate_record"
+      ],
+      "source_row": 147
+    },
+    {
+      "row": 1040,
+      "status": "duplicate",
+      "defects": [
+        "duplicate_record"
+      ],
+      "source_row": 464
+    },
+    {
+      "row": 1041,
+      "status": "duplicate",
+      "defects": [
+        "duplicate_record"
+      ],
+      "source_row": 300
+    },
+    {
+      "row": 1042,
+      "status": "duplicate",
+      "defects": [
+        "duplicate_record"
+      ],
+      "source_row": 260
+    },
+    {
+      "row": 1043,
+      "status": "duplicate",
+      "defects": [
+        "duplicate_record"
+      ],
+      "source_row": 609
+    },
+    {
+      "row": 1044,
+      "status": "duplicate",
+      "defects": [
+        "duplicate_record"
+      ],
+      "source_row": 963
+    },
+    {
+      "row": 1045,
+      "status": "duplicate",
+      "defects": [
+        "duplicate_record"
+      ],
+      "source_row": 632
+    },
+    {
+      "row": 1046,
+      "status": "duplicate",
+      "defects": [
+        "duplicate_record"
+      ],
+      "source_row": 647
+    },
+    {
+      "row": 1047,
+      "status": "duplicate",
+      "defects": [
+        "duplicate_record"
+      ],
+      "source_row": 874
+    },
+    {
+      "row": 1048,
+      "status": "duplicate",
+      "defects": [
+        "duplicate_record"
+      ],
+      "source_row": 345
+    },
+    {
+      "row": 1049,
+      "status": "duplicate",
+      "defects": [
+        "duplicate_record"
+      ],
+      "source_row": 379
+    },
+    {
+      "row": 1050,
+      "status": "duplicate",
+      "defects": [
+        "duplicate_record"
+      ],
+      "source_row": 249
+    },
+    {
+      "row": 1051,
+      "status": "duplicate",
+      "defects": [
+        "duplicate_record"
+      ],
+      "source_row": 805
+    }
+  ]
+}

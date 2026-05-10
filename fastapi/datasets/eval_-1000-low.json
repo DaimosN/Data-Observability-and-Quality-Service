@@ -1,0 +1,187 @@
+{
+  "dataset": "-1000-low.manifest",
+  "manifest_stats": {
+    "total": 1000,
+    "valid": 956,
+    "corrupt": 44,
+    "duplicates": 0
+  },
+  "api_stats": {
+    "total": 1000,
+    "approved": 960,
+    "quarantine": 40
+  },
+  "overall_metrics": {
+    "total_records": 1000,
+    "true_positive": 40,
+    "false_positive": 0,
+    "false_negative": 4,
+    "true_negative": 956,
+    "precision": 1.0,
+    "recall": 0.9091,
+    "f1_score": 0.9524
+  },
+  "per_defect_metrics": {
+    "position_not_in_dict": {
+      "tp": 6,
+      "fp": 0,
+      "fn": 10,
+      "precision": 1.0,
+      "recall": 0.375
+    },
+    "salary_string": {
+      "tp": 6,
+      "fp": 1,
+      "fn": 0,
+      "precision": 0.8571,
+      "recall": 1.0
+    },
+    "salary_zero": {
+      "tp": 2,
+      "fp": 2,
+      "fn": 0,
+      "precision": 0.5,
+      "recall": 1.0
+    },
+    "salary_negative": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "precision": 0.0,
+      "recall": 0.0
+    },
+    "birth_date_underage": {
+      "tp": 1,
+      "fp": 0,
+      "fn": 3,
+      "precision": 1.0,
+      "recall": 0.25
+    },
+    "passport_number_short": {
+      "tp": 2,
+      "fp": 1,
+      "fn": 0,
+      "precision": 0.6667,
+      "recall": 1.0
+    },
+    "gender_invalid": {
+      "tp": 11,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0
+    },
+    "birth_date_too_old": {
+      "tp": 1,
+      "fp": 0,
+      "fn": 2,
+      "precision": 1.0,
+      "recall": 0.3333
+    },
+    "passport_letters": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 1,
+      "precision": 0.0,
+      "recall": 0.0
+    },
+    "passport_series_short": {
+      "tp": 2,
+      "fp": 1,
+      "fn": 0,
+      "precision": 0.6667,
+      "recall": 1.0
+    },
+    "hire_date_bad_format": {
+      "tp": 6,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0
+    },
+    "hire_date_future": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 3,
+      "precision": 0.0,
+      "recall": 0.0
+    },
+    "inn_wrong_length": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "precision": 0.0,
+      "recall": 0.0
+    },
+    "inn_bad_checksum": {
+      "tp": 2,
+      "fp": 2,
+      "fn": 0,
+      "precision": 0.5,
+      "recall": 1.0
+    },
+    "birth_date_bad_format": {
+      "tp": 2,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0
+    },
+    "snils_bad_checksum": {
+      "tp": 2,
+      "fp": 0,
+      "fn": 1,
+      "precision": 1.0,
+      "recall": 0.6667
+    },
+    "snils_missing": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 6,
+      "precision": 0.0,
+      "recall": 0.0
+    },
+    "salary_missing": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 1,
+      "precision": 0.0,
+      "recall": 0.0
+    },
+    "birth_date_future": {
+      "tp": 1,
+      "fp": 0,
+      "fn": 1,
+      "precision": 1.0,
+      "recall": 0.5
+    },
+    "hire_date_before_birth": {
+      "tp": 1,
+      "fp": 0,
+      "fn": 2,
+      "precision": 1.0,
+      "recall": 0.3333
+    },
+    "inn_missing": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 5,
+      "precision": 0.0,
+      "recall": 0.0
+    },
+    "passport_missing": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 1,
+      "precision": 0.0,
+      "recall": 0.0
+    },
+    "passport_series_long": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 1,
+      "precision": 0.0,
+      "recall": 0.0
+    }
+  }
+}

@@ -1,0 +1,415 @@
+{
+  "total": 1000,
+  "approved": 960,
+  "quarantine": 40,
+  "errors_detail": [
+    {
+      "row": 14,
+      "errors": [
+        {
+          "field": "position",
+          "message": "Должность 'главный инженер' не найдена в справочнике"
+        }
+      ]
+    },
+    {
+      "row": 30,
+      "errors": [
+        {
+          "field": "position",
+          "message": "Input should be a valid string"
+        },
+        {
+          "field": "salary",
+          "message": "Input should be a valid number, unable to parse string as a number"
+        }
+      ]
+    },
+    {
+      "row": 37,
+      "errors": [
+        {
+          "field": "salary",
+          "message": "Input should be greater than 0"
+        }
+      ]
+    },
+    {
+      "row": 39,
+      "errors": [
+        {
+          "field": "",
+          "message": "Value error, birth_date: сотруднику 7 лет (минимум 18)"
+        }
+      ]
+    },
+    {
+      "row": 48,
+      "errors": [
+        {
+          "field": "passport_number",
+          "message": "Value error, passport_number: 6 цифр"
+        }
+      ]
+    },
+    {
+      "row": 69,
+      "errors": [
+        {
+          "field": "gender",
+          "message": "Value error, gender: допустимы только 'М' или 'Ж'"
+        }
+      ]
+    },
+    {
+      "row": 92,
+      "errors": [
+        {
+          "field": "gender",
+          "message": "Value error, gender: допустимы только 'М' или 'Ж'"
+        }
+      ]
+    },
+    {
+      "row": 120,
+      "errors": [
+        {
+          "field": "salary",
+          "message": "Input should be a valid number, unable to parse string as a number"
+        },
+        {
+          "field": "passport_number",
+          "message": "Value error, passport_number: 6 цифр"
+        }
+      ]
+    },
+    {
+      "row": 128,
+      "errors": [
+        {
+          "field": "hire_date",
+          "message": "Value error, Не удалось распознать дату: '12.16.2024'"
+        },
+        {
+          "field": "passport_series",
+          "message": "Value error, passport_series: 4 цифры"
+        }
+      ]
+    },
+    {
+      "row": 151,
+      "errors": [
+        {
+          "field": "gender",
+          "message": "Value error, gender: допустимы только 'М' или 'Ж'"
+        },
+        {
+          "field": "inn",
+          "message": "Value error, inn: неверный формат или контрольная сумма"
+        }
+      ]
+    },
+    {
+      "row": 165,
+      "errors": [
+        {
+          "field": "gender",
+          "message": "Value error, gender: допустимы только 'М' или 'Ж'"
+        }
+      ]
+    },
+    {
+      "row": 168,
+      "errors": [
+        {
+          "field": "gender",
+          "message": "Value error, gender: допустимы только 'М' или 'Ж'"
+        }
+      ]
+    },
+    {
+      "row": 189,
+      "errors": [
+        {
+          "field": "birth_date",
+          "message": "Value error, Не удалось распознать дату: '21/10/not_a_year'"
+        },
+        {
+          "field": "hire_date",
+          "message": "Value error, Не удалось распознать дату: '14.15.2024'"
+        },
+        {
+          "field": "snils",
+          "message": "Value error, snils: неверный формат или контрольная сумма"
+        }
+      ]
+    },
+    {
+      "row": 234,
+      "errors": [
+        {
+          "field": "position",
+          "message": "Должность 'неопределено' не найдена в справочнике"
+        }
+      ]
+    },
+    {
+      "row": 257,
+      "errors": [
+        {
+          "field": "hire_date",
+          "message": "Value error, Не удалось распознать дату: '24.14.2024'"
+        }
+      ]
+    },
+    {
+      "row": 285,
+      "errors": [
+        {
+          "field": "salary",
+          "message": "Input should be a valid number"
+        },
+        {
+          "field": "gender",
+          "message": "Value error, gender: допустимы только 'М' или 'Ж'"
+        }
+      ]
+    },
+    {
+      "row": 332,
+      "errors": [
+        {
+          "field": "inn",
+          "message": "Value error, inn: неверный формат или контрольная сумма"
+        }
+      ]
+    },
+    {
+      "row": 349,
+      "errors": [
+        {
+          "field": "",
+          "message": "Value error, birth_date: дата рождения не может быть в будущем"
+        }
+      ]
+    },
+    {
+      "row": 403,
+      "errors": [
+        {
+          "field": "salary",
+          "message": "Input should be greater than 0"
+        },
+        {
+          "field": "passport_number",
+          "message": "Value error, passport_number: 6 цифр"
+        },
+        {
+          "field": "gender",
+          "message": "Value error, gender: допустимы только 'М' или 'Ж'"
+        }
+      ]
+    },
+    {
+      "row": 426,
+      "errors": [
+        {
+          "field": "gender",
+          "message": "Value error, gender: допустимы только 'М' или 'Ж'"
+        }
+      ]
+    },
+    {
+      "row": 470,
+      "errors": [
+        {
+          "field": "gender",
+          "message": "Value error, gender: допустимы только 'М' или 'Ж'"
+        },
+        {
+          "field": "inn",
+          "message": "Value error, inn: неверный формат или контрольная сумма"
+        }
+      ]
+    },
+    {
+      "row": 484,
+      "errors": [
+        {
+          "field": "gender",
+          "message": "Value error, gender: допустимы только 'М' или 'Ж'"
+        },
+        {
+          "field": "inn",
+          "message": "Value error, inn: неверный формат или контрольная сумма"
+        }
+      ]
+    },
+    {
+      "row": 489,
+      "errors": [
+        {
+          "field": "hire_date",
+          "message": "Value error, Не удалось распознать дату: '4.16.2024'"
+        }
+      ]
+    },
+    {
+      "row": 491,
+      "errors": [
+        {
+          "field": "position",
+          "message": "Должность 'главный инженер' не найдена в справочнике"
+        }
+      ]
+    },
+    {
+      "row": 492,
+      "errors": [
+        {
+          "field": "salary",
+          "message": "Input should be a valid number, unable to parse string as a number"
+        }
+      ]
+    },
+    {
+      "row": 497,
+      "errors": [
+        {
+          "field": "position",
+          "message": "Должность 'главный инженер' не найдена в справочнике"
+        }
+      ]
+    },
+    {
+      "row": 498,
+      "errors": [
+        {
+          "field": "position",
+          "message": "Input should be a valid string"
+        }
+      ]
+    },
+    {
+      "row": 557,
+      "errors": [
+        {
+          "field": "salary",
+          "message": "Input should be a valid number, unable to parse string as a number"
+        }
+      ]
+    },
+    {
+      "row": 560,
+      "errors": [
+        {
+          "field": "birth_date",
+          "message": "Value error, Не удалось распознать дату: '8/9/not_a_year'"
+        }
+      ]
+    },
+    {
+      "row": 578,
+      "errors": [
+        {
+          "field": "passport_series",
+          "message": "Value error, passport_series: 4 цифры"
+        }
+      ]
+    },
+    {
+      "row": 609,
+      "errors": [
+        {
+          "field": "salary",
+          "message": "Input should be greater than 0"
+        }
+      ]
+    },
+    {
+      "row": 616,
+      "errors": [
+        {
+          "field": "gender",
+          "message": "Value error, gender: допустимы только 'М' или 'Ж'"
+        }
+      ]
+    },
+    {
+      "row": 694,
+      "errors": [
+        {
+          "field": "snils",
+          "message": "Value error, snils: неверный формат или контрольная сумма"
+        }
+      ]
+    },
+    {
+      "row": 768,
+      "errors": [
+        {
+          "field": "hire_date",
+          "message": "Value error, Не удалось распознать дату: '31.14.2024'"
+        }
+      ]
+    },
+    {
+      "row": 783,
+      "errors": [
+        {
+          "field": "",
+          "message": "Value error, hire_date: дата приёма раньше даты рождения"
+        }
+      ]
+    },
+    {
+      "row": 805,
+      "errors": [
+        {
+          "field": "hire_date",
+          "message": "Value error, Не удалось распознать дату: '27.14.2024'"
+        },
+        {
+          "field": "salary",
+          "message": "Input should be a valid number, unable to parse string as a number"
+        }
+      ]
+    },
+    {
+      "row": 840,
+      "errors": [
+        {
+          "field": "passport_series",
+          "message": "Value error, passport_series: 4 цифры"
+        }
+      ]
+    },
+    {
+      "row": 888,
+      "errors": [
+        {
+          "field": "",
+          "message": "Value error, birth_date: сотруднику 116 лет (максимум 100)"
+        }
+      ]
+    },
+    {
+      "row": 904,
+      "errors": [
+        {
+          "field": "salary",
+          "message": "Input should be a valid number, unable to parse string as a number"
+        }
+      ]
+    },
+    {
+      "row": 950,
+      "errors": [
+        {
+          "field": "salary",
+          "message": "Input should be greater than 0"
+        }
+      ]
+    }
+  ]
+}

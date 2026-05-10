@@ -1,0 +1,3048 @@
+{
+  "total": 1050,
+  "approved": 757,
+  "quarantine": 293,
+  "errors_detail": [
+    {
+      "row": 4,
+      "errors": [
+        {
+          "field": "birth_date",
+          "message": "Value error, Не удалось распознать дату: '30/6/not_a_year'"
+        },
+        {
+          "field": "inn",
+          "message": "Value error, inn: неверный формат или контрольная сумма"
+        }
+      ]
+    },
+    {
+      "row": 5,
+      "errors": [
+        {
+          "field": "salary",
+          "message": "Input should be greater than 0"
+        },
+        {
+          "field": "inn",
+          "message": "Value error, inn: неверный формат или контрольная сумма"
+        }
+      ]
+    },
+    {
+      "row": 12,
+      "errors": [
+        {
+          "field": "position",
+          "message": "Должность 'неопределено' не найдена в справочнике"
+        }
+      ]
+    },
+    {
+      "row": 13,
+      "errors": [
+        {
+          "field": "",
+          "message": "Value error, birth_date: сотруднику 12 лет (минимум 18)"
+        }
+      ]
+    },
+    {
+      "row": 19,
+      "errors": [
+        {
+          "field": "snils",
+          "message": "Value error, snils: неверный формат или контрольная сумма"
+        }
+      ]
+    },
+    {
+      "row": 22,
+      "errors": [
+        {
+          "field": "position",
+          "message": "Input should be a valid string"
+        },
+        {
+          "field": "inn",
+          "message": "Value error, inn: неверный формат или контрольная сумма"
+        }
+      ]
+    },
+    {
+      "row": 23,
+      "errors": [
+        {
+          "field": "inn",
+          "message": "Value error, inn: неверный формат или контрольная сумма"
+        }
+      ]
+    },
+    {
+      "row": 24,
+      "errors": [
+        {
+          "field": "inn",
+          "message": "Value error, inn: неверный формат или контрольная сумма"
+        }
+      ]
+    },
+    {
+      "row": 25,
+      "errors": [
+        {
+          "field": "passport_series",
+          "message": "Value error, passport_series: 4 цифры"
+        }
+      ]
+    },
+    {
+      "row": 26,
+      "errors": [
+        {
+          "field": "passport_series",
+          "message": "Value error, passport_series: 4 цифры"
+        },
+        {
+          "field": "snils",
+          "message": "Value error, snils: неверный формат или контрольная сумма"
+        }
+      ]
+    },
+    {
+      "row": 35,
+      "errors": [
+        {
+          "field": "salary",
+          "message": "Input should be greater than 0"
+        }
+      ]
+    },
+    {
+      "row": 36,
+      "errors": [
+        {
+          "field": "salary",
+          "message": "Input should be greater than 0"
+        },
+        {
+          "field": "inn",
+          "message": "Value error, inn: неверный формат или контрольная сумма"
+        }
+      ]
+    },
+    {
+      "row": 40,
+      "errors": [
+        {
+          "field": "",
+          "message": "Value error, hire_date: дата приёма раньше даты рождения"
+        }
+      ]
+    },
+    {
+      "row": 41,
+      "errors": [
+        {
+          "field": "",
+          "message": "Value error, birth_date: сотруднику 129 лет (максимум 100)"
+        }
+      ]
+    },
+    {
+      "row": 47,
+      "errors": [
+        {
+          "field": "gender",
+          "message": "Value error, gender: допустимы только 'М' или 'Ж'"
+        },
+        {
+          "field": "inn",
+          "message": "Value error, inn: неверный формат или контрольная сумма"
+        }
+      ]
+    },
+    {
+      "row": 52,
+      "errors": [
+        {
+          "field": "passport_series",
+          "message": "Value error, passport_series: 4 цифры"
+        }
+      ]
+    },
+    {
+      "row": 53,
+      "errors": [
+        {
+          "field": "gender",
+          "message": "Value error, gender: допустимы только 'М' или 'Ж'"
+        },
+        {
+          "field": "snils",
+          "message": "Value error, snils: неверный формат или контрольная сумма"
+        }
+      ]
+    },
+    {
+      "row": 58,
+      "errors": [
+        {
+          "field": "passport_number",
+          "message": "Value error, passport_number: 6 цифр"
+        }
+      ]
+    },
+    {
+      "row": 60,
+      "errors": [
+        {
+          "field": "",
+          "message": "Value error, hire_date: дата приёма раньше даты рождения"
+        }
+      ]
+    },
+    {
+      "row": 63,
+      "errors": [
+        {
+          "field": "gender",
+          "message": "Value error, gender: допустимы только 'М' или 'Ж'"
+        }
+      ]
+    },
+    {
+      "row": 66,
+      "errors": [
+        {
+          "field": "",
+          "message": "Value error, birth_date: сотруднику 113 лет (максимум 100)"
+        }
+      ]
+    },
+    {
+      "row": 69,
+      "errors": [
+        {
+          "field": "inn",
+          "message": "Value error, inn: неверный формат или контрольная сумма"
+        }
+      ]
+    },
+    {
+      "row": 71,
+      "errors": [
+        {
+          "field": "",
+          "message": "Value error, salary: зарплата ниже МРОТ (20 000 ₽)"
+        }
+      ]
+    },
+    {
+      "row": 72,
+      "errors": [
+        {
+          "field": "hire_date",
+          "message": "Value error, Не удалось распознать дату: '20.15.2024'"
+        },
+        {
+          "field": "gender",
+          "message": "Value error, gender: допустимы только 'М' или 'Ж'"
+        }
+      ]
+    },
+    {
+      "row": 75,
+      "errors": [
+        {
+          "field": "position",
+          "message": "Input should be a valid string"
+        },
+        {
+          "field": "passport_number",
+          "message": "Value error, passport_number: 6 цифр"
+        }
+      ]
+    },
+    {
+      "row": 76,
+      "errors": [
+        {
+          "field": "snils",
+          "message": "Value error, snils: неверный формат или контрольная сумма"
+        }
+      ]
+    },
+    {
+      "row": 83,
+      "errors": [
+        {
+          "field": "gender",
+          "message": "Value error, gender: допустимы только 'М' или 'Ж'"
+        },
+        {
+          "field": "inn",
+          "message": "Value error, inn: неверный формат или контрольная сумма"
+        }
+      ]
+    },
+    {
+      "row": 84,
+      "errors": [
+        {
+          "field": "salary",
+          "message": "Input should be less than or equal to 5000000"
+        },
+        {
+          "field": "passport_number",
+          "message": "Value error, passport_number: 6 цифр"
+        }
+      ]
+    },
+    {
+      "row": 86,
+      "errors": [
+        {
+          "field": "gender",
+          "message": "Value error, gender: допустимы только 'М' или 'Ж'"
+        }
+      ]
+    },
+    {
+      "row": 91,
+      "errors": [
+        {
+          "field": "salary",
+          "message": "Input should be greater than 0"
+        },
+        {
+          "field": "gender",
+          "message": "Value error, gender: допустимы только 'М' или 'Ж'"
+        }
+      ]
+    },
+    {
+      "row": 92,
+      "errors": [
+        {
+          "field": "passport_number",
+          "message": "Value error, passport_number: 6 цифр"
+        },
+        {
+          "field": "gender",
+          "message": "Value error, gender: допустимы только 'М' или 'Ж'"
+        }
+      ]
+    },
+    {
+      "row": 93,
+      "errors": [
+        {
+          "field": "birth_date",
+          "message": "Value error, Не удалось распознать дату: '15/1/not_a_year'"
+        },
+        {
+          "field": "position",
+          "message": "Input should be a valid string"
+        }
+      ]
+    },
+    {
+      "row": 98,
+      "errors": [
+        {
+          "field": "salary",
+          "message": "Input should be a valid number, unable to parse string as a number"
+        },
+        {
+          "field": "gender",
+          "message": "Value error, gender: допустимы только 'М' или 'Ж'"
+        }
+      ]
+    },
+    {
+      "row": 100,
+      "errors": [
+        {
+          "field": "salary",
+          "message": "Input should be a valid number"
+        },
+        {
+          "field": "inn",
+          "message": "Value error, inn: неверный формат или контрольная сумма"
+        }
+      ]
+    },
+    {
+      "row": 112,
+      "errors": [
+        {
+          "field": "salary",
+          "message": "Input should be greater than 0"
+        },
+        {
+          "field": "gender",
+          "message": "Value error, gender: допустимы только 'М' или 'Ж'"
+        }
+      ]
+    },
+    {
+      "row": 114,
+      "errors": [
+        {
+          "field": "inn",
+          "message": "Value error, inn: неверный формат или контрольная сумма"
+        }
+      ]
+    },
+    {
+      "row": 117,
+      "errors": [
+        {
+          "field": "position",
+          "message": "Должность 'главный инженер' не найдена в справочнике"
+        }
+      ]
+    },
+    {
+      "row": 120,
+      "errors": [
+        {
+          "field": "inn",
+          "message": "Value error, inn: неверный формат или контрольная сумма"
+        }
+      ]
+    },
+    {
+      "row": 124,
+      "errors": [
+        {
+          "field": "gender",
+          "message": "Value error, gender: допустимы только 'М' или 'Ж'"
+        }
+      ]
+    },
+    {
+      "row": 126,
+      "errors": [
+        {
+          "field": "birth_date",
+          "message": "Value error, Не удалось распознать дату: '26/12/not_a_year'"
+        },
+        {
+          "field": "gender",
+          "message": "Value error, gender: допустимы только 'М' или 'Ж'"
+        }
+      ]
+    },
+    {
+      "row": 127,
+      "errors": [
+        {
+          "field": "position",
+          "message": "Input should be a valid string"
+        }
+      ]
+    },
+    {
+      "row": 128,
+      "errors": [
+        {
+          "field": "position",
+          "message": "Должность 'неопределено' не найдена в справочнике"
+        }
+      ]
+    },
+    {
+      "row": 131,
+      "errors": [
+        {
+          "field": "passport_series",
+          "message": "Value error, passport_series: 4 цифры"
+        },
+        {
+          "field": "gender",
+          "message": "Value error, gender: допустимы только 'М' или 'Ж'"
+        }
+      ]
+    },
+    {
+      "row": 135,
+      "errors": [
+        {
+          "field": "birth_date",
+          "message": "Value error, Не удалось распознать дату: '2/11/not_a_year'"
+        }
+      ]
+    },
+    {
+      "row": 137,
+      "errors": [
+        {
+          "field": "salary",
+          "message": "Input should be a valid number"
+        },
+        {
+          "field": "inn",
+          "message": "Value error, inn: неверный формат или контрольная сумма"
+        }
+      ]
+    },
+    {
+      "row": 140,
+      "errors": [
+        {
+          "field": "passport_number",
+          "message": "Value error, passport_number: 6 цифр"
+        }
+      ]
+    },
+    {
+      "row": 142,
+      "errors": [
+        {
+          "field": "salary",
+          "message": "Input should be a valid number"
+        }
+      ]
+    },
+    {
+      "row": 143,
+      "errors": [
+        {
+          "field": "position",
+          "message": "Input should be a valid string"
+        }
+      ]
+    },
+    {
+      "row": 148,
+      "errors": [
+        {
+          "field": "passport_number",
+          "message": "Value error, passport_number: 6 цифр"
+        },
+        {
+          "field": "inn",
+          "message": "Value error, inn: неверный формат или контрольная сумма"
+        }
+      ]
+    },
+    {
+      "row": 152,
+      "errors": [
+        {
+          "field": "position",
+          "message": "Input should be a valid string"
+        }
+      ]
+    },
+    {
+      "row": 161,
+      "errors": [
+        {
+          "field": "birth_date",
+          "message": "Value error, Не удалось распознать дату: '30/5/not_a_year'"
+        },
+        {
+          "field": "hire_date",
+          "message": "Value error, Не удалось распознать дату: '31.20.2024'"
+        }
+      ]
+    },
+    {
+      "row": 163,
+      "errors": [
+        {
+          "field": "salary",
+          "message": "Input should be a valid number"
+        },
+        {
+          "field": "passport_number",
+          "message": "Value error, passport_number: 6 цифр"
+        }
+      ]
+    },
+    {
+      "row": 168,
+      "errors": [
+        {
+          "field": "hire_date",
+          "message": "Value error, Не удалось распознать дату: '30.15.2024'"
+        }
+      ]
+    },
+    {
+      "row": 169,
+      "errors": [
+        {
+          "field": "hire_date",
+          "message": "Value error, Не удалось распознать дату: '12.19.2024'"
+        }
+      ]
+    },
+    {
+      "row": 176,
+      "errors": [
+        {
+          "field": "gender",
+          "message": "Value error, gender: допустимы только 'М' или 'Ж'"
+        }
+      ]
+    },
+    {
+      "row": 177,
+      "errors": [
+        {
+          "field": "gender",
+          "message": "Value error, gender: допустимы только 'М' или 'Ж'"
+        }
+      ]
+    },
+    {
+      "row": 178,
+      "errors": [
+        {
+          "field": "gender",
+          "message": "Value error, gender: допустимы только 'М' или 'Ж'"
+        }
+      ]
+    },
+    {
+      "row": 185,
+      "errors": [
+        {
+          "field": "position",
+          "message": "Должность 'неопределено' не найдена в справочнике"
+        }
+      ]
+    },
+    {
+      "row": 191,
+      "errors": [
+        {
+          "field": "gender",
+          "message": "Value error, gender: допустимы только 'М' или 'Ж'"
+        },
+        {
+          "field": "inn",
+          "message": "Value error, inn: неверный формат или контрольная сумма"
+        }
+      ]
+    },
+    {
+      "row": 193,
+      "errors": [
+        {
+          "field": "passport_number",
+          "message": "Value error, passport_number: 6 цифр"
+        }
+      ]
+    },
+    {
+      "row": 198,
+      "errors": [
+        {
+          "field": "inn",
+          "message": "Value error, inn: неверный формат или контрольная сумма"
+        }
+      ]
+    },
+    {
+      "row": 201,
+      "errors": [
+        {
+          "field": "position",
+          "message": "Input should be a valid string"
+        },
+        {
+          "field": "gender",
+          "message": "Value error, gender: допустимы только 'М' или 'Ж'"
+        },
+        {
+          "field": "snils",
+          "message": "Value error, snils: неверный формат или контрольная сумма"
+        }
+      ]
+    },
+    {
+      "row": 204,
+      "errors": [
+        {
+          "field": "birth_date",
+          "message": "Value error, Не удалось распознать дату: '18/8/not_a_year'"
+        }
+      ]
+    },
+    {
+      "row": 210,
+      "errors": [
+        {
+          "field": "passport_series",
+          "message": "Value error, passport_series: 4 цифры"
+        },
+        {
+          "field": "inn",
+          "message": "Value error, inn: неверный формат или контрольная сумма"
+        }
+      ]
+    },
+    {
+      "row": 213,
+      "errors": [
+        {
+          "field": "gender",
+          "message": "Value error, gender: допустимы только 'М' или 'Ж'"
+        },
+        {
+          "field": "inn",
+          "message": "Value error, inn: неверный формат или контрольная сумма"
+        }
+      ]
+    },
+    {
+      "row": 214,
+      "errors": [
+        {
+          "field": "inn",
+          "message": "Value error, inn: неверный формат или контрольная сумма"
+        }
+      ]
+    },
+    {
+      "row": 215,
+      "errors": [
+        {
+          "field": "gender",
+          "message": "Value error, gender: допустимы только 'М' или 'Ж'"
+        }
+      ]
+    },
+    {
+      "row": 216,
+      "errors": [
+        {
+          "field": "",
+          "message": "Value error, salary: зарплата ниже МРОТ (20 000 ₽)"
+        }
+      ]
+    },
+    {
+      "row": 223,
+      "errors": [
+        {
+          "field": "birth_date",
+          "message": "Value error, Не удалось распознать дату: '14/9/not_a_year'"
+        }
+      ]
+    },
+    {
+      "row": 227,
+      "errors": [
+        {
+          "field": "salary",
+          "message": "Input should be less than or equal to 5000000"
+        }
+      ]
+    },
+    {
+      "row": 228,
+      "errors": [
+        {
+          "field": "salary",
+          "message": "Input should be greater than 0"
+        }
+      ]
+    },
+    {
+      "row": 236,
+      "errors": [
+        {
+          "field": "",
+          "message": "Value error, birth_date: дата рождения не может быть в будущем"
+        }
+      ]
+    },
+    {
+      "row": 237,
+      "errors": [
+        {
+          "field": "inn",
+          "message": "Value error, inn: неверный формат или контрольная сумма"
+        }
+      ]
+    },
+    {
+      "row": 238,
+      "errors": [
+        {
+          "field": "gender",
+          "message": "Value error, gender: допустимы только 'М' или 'Ж'"
+        },
+        {
+          "field": "snils",
+          "message": "Value error, snils: неверный формат или контрольная сумма"
+        }
+      ]
+    },
+    {
+      "row": 240,
+      "errors": [
+        {
+          "field": "inn",
+          "message": "Value error, inn: неверный формат или контрольная сумма"
+        }
+      ]
+    },
+    {
+      "row": 242,
+      "errors": [
+        {
+          "field": "salary",
+          "message": "Input should be greater than 0"
+        }
+      ]
+    },
+    {
+      "row": 244,
+      "errors": [
+        {
+          "field": "gender",
+          "message": "Value error, gender: допустимы только 'М' или 'Ж'"
+        }
+      ]
+    },
+    {
+      "row": 245,
+      "errors": [
+        {
+          "field": "salary",
+          "message": "Input should be a valid number"
+        }
+      ]
+    },
+    {
+      "row": 248,
+      "errors": [
+        {
+          "field": "hire_date",
+          "message": "Value error, Не удалось распознать дату: '12.15.2024'"
+        },
+        {
+          "field": "salary",
+          "message": "Input should be a valid number, unable to parse string as a number"
+        }
+      ]
+    },
+    {
+      "row": 253,
+      "errors": [
+        {
+          "field": "",
+          "message": "Value error, birth_date: сотруднику 6 лет (минимум 18)"
+        }
+      ]
+    },
+    {
+      "row": 254,
+      "errors": [
+        {
+          "field": "position",
+          "message": "Input should be a valid string"
+        },
+        {
+          "field": "salary",
+          "message": "Input should be greater than 0"
+        }
+      ]
+    },
+    {
+      "row": 261,
+      "errors": [
+        {
+          "field": "gender",
+          "message": "Value error, gender: допустимы только 'М' или 'Ж'"
+        },
+        {
+          "field": "inn",
+          "message": "Value error, inn: неверный формат или контрольная сумма"
+        }
+      ]
+    },
+    {
+      "row": 265,
+      "errors": [
+        {
+          "field": "position",
+          "message": "Input should be a valid string"
+        },
+        {
+          "field": "snils",
+          "message": "Value error, snils: неверный формат или контрольная сумма"
+        }
+      ]
+    },
+    {
+      "row": 267,
+      "errors": [
+        {
+          "field": "position",
+          "message": "Input should be a valid string"
+        }
+      ]
+    },
+    {
+      "row": 268,
+      "errors": [
+        {
+          "field": "gender",
+          "message": "Value error, gender: допустимы только 'М' или 'Ж'"
+        }
+      ]
+    },
+    {
+      "row": 274,
+      "errors": [
+        {
+          "field": "position",
+          "message": "Должность 'неопределено' не найдена в справочнике"
+        }
+      ]
+    },
+    {
+      "row": 280,
+      "errors": [
+        {
+          "field": "birth_date",
+          "message": "Value error, Не удалось распознать дату: '20/12/not_a_year'"
+        },
+        {
+          "field": "inn",
+          "message": "Value error, inn: неверный формат или контрольная сумма"
+        }
+      ]
+    },
+    {
+      "row": 286,
+      "errors": [
+        {
+          "field": "snils",
+          "message": "Value error, snils: неверный формат или контрольная сумма"
+        }
+      ]
+    },
+    {
+      "row": 288,
+      "errors": [
+        {
+          "field": "position",
+          "message": "Input should be a valid string"
+        }
+      ]
+    },
+    {
+      "row": 289,
+      "errors": [
+        {
+          "field": "gender",
+          "message": "Value error, gender: допустимы только 'М' или 'Ж'"
+        }
+      ]
+    },
+    {
+      "row": 294,
+      "errors": [
+        {
+          "field": "salary",
+          "message": "Input should be less than or equal to 5000000"
+        }
+      ]
+    },
+    {
+      "row": 295,
+      "errors": [
+        {
+          "field": "inn",
+          "message": "Value error, inn: неверный формат или контрольная сумма"
+        }
+      ]
+    },
+    {
+      "row": 304,
+      "errors": [
+        {
+          "field": "",
+          "message": "Value error, birth_date: сотруднику 11 лет (минимум 18)"
+        }
+      ]
+    },
+    {
+      "row": 305,
+      "errors": [
+        {
+          "field": "salary",
+          "message": "Input should be greater than 0"
+        }
+      ]
+    },
+    {
+      "row": 306,
+      "errors": [
+        {
+          "field": "passport_number",
+          "message": "Value error, passport_number: 6 цифр"
+        }
+      ]
+    },
+    {
+      "row": 309,
+      "errors": [
+        {
+          "field": "gender",
+          "message": "Value error, gender: допустимы только 'М' или 'Ж'"
+        }
+      ]
+    },
+    {
+      "row": 311,
+      "errors": [
+        {
+          "field": "gender",
+          "message": "Value error, gender: допустимы только 'М' или 'Ж'"
+        }
+      ]
+    },
+    {
+      "row": 322,
+      "errors": [
+        {
+          "field": "salary",
+          "message": "Input should be a valid number"
+        },
+        {
+          "field": "passport_series",
+          "message": "Value error, passport_series: 4 цифры"
+        },
+        {
+          "field": "gender",
+          "message": "Value error, gender: допустимы только 'М' или 'Ж'"
+        }
+      ]
+    },
+    {
+      "row": 325,
+      "errors": [
+        {
+          "field": "passport_series",
+          "message": "Value error, passport_series: 4 цифры"
+        }
+      ]
+    },
+    {
+      "row": 327,
+      "errors": [
+        {
+          "field": "inn",
+          "message": "Value error, inn: неверный формат или контрольная сумма"
+        }
+      ]
+    },
+    {
+      "row": 332,
+      "errors": [
+        {
+          "field": "",
+          "message": "Value error, salary: зарплата ниже МРОТ (20 000 ₽)"
+        }
+      ]
+    },
+    {
+      "row": 333,
+      "errors": [
+        {
+          "field": "",
+          "message": "Value error, birth_date: сотруднику 123 лет (максимум 100)"
+        }
+      ]
+    },
+    {
+      "row": 335,
+      "errors": [
+        {
+          "field": "salary",
+          "message": "Input should be less than or equal to 5000000"
+        },
+        {
+          "field": "inn",
+          "message": "Value error, inn: неверный формат или контрольная сумма"
+        }
+      ]
+    },
+    {
+      "row": 336,
+      "errors": [
+        {
+          "field": "birth_date",
+          "message": "Value error, Не удалось распознать дату: '14/9/not_a_year'"
+        },
+        {
+          "field": "hire_date",
+          "message": "Value error, Не удалось распознать дату: '23.15.2024'"
+        },
+        {
+          "field": "salary",
+          "message": "Input should be greater than 0"
+        }
+      ]
+    },
+    {
+      "row": 337,
+      "errors": [
+        {
+          "field": "snils",
+          "message": "Value error, snils: неверный формат или контрольная сумма"
+        }
+      ]
+    },
+    {
+      "row": 342,
+      "errors": [
+        {
+          "field": "salary",
+          "message": "Input should be greater than 0"
+        },
+        {
+          "field": "snils",
+          "message": "Value error, snils: неверный формат или контрольная сумма"
+        }
+      ]
+    },
+    {
+      "row": 346,
+      "errors": [
+        {
+          "field": "snils",
+          "message": "Value error, snils: неверный формат или контрольная сумма"
+        }
+      ]
+    },
+    {
+      "row": 353,
+      "errors": [
+        {
+          "field": "gender",
+          "message": "Value error, gender: допустимы только 'М' или 'Ж'"
+        },
+        {
+          "field": "inn",
+          "message": "Value error, inn: неверный формат или контрольная сумма"
+        }
+      ]
+    },
+    {
+      "row": 363,
+      "errors": [
+        {
+          "field": "gender",
+          "message": "Value error, gender: допустимы только 'М' или 'Ж'"
+        }
+      ]
+    },
+    {
+      "row": 368,
+      "errors": [
+        {
+          "field": "position",
+          "message": "Input should be a valid string"
+        },
+        {
+          "field": "gender",
+          "message": "Value error, gender: допустимы только 'М' или 'Ж'"
+        }
+      ]
+    },
+    {
+      "row": 373,
+      "errors": [
+        {
+          "field": "position",
+          "message": "Input should be a valid string"
+        }
+      ]
+    },
+    {
+      "row": 381,
+      "errors": [
+        {
+          "field": "gender",
+          "message": "Value error, gender: допустимы только 'М' или 'Ж'"
+        }
+      ]
+    },
+    {
+      "row": 383,
+      "errors": [
+        {
+          "field": "position",
+          "message": "Input should be a valid string"
+        },
+        {
+          "field": "salary",
+          "message": "Input should be a valid number, unable to parse string as a number"
+        }
+      ]
+    },
+    {
+      "row": 384,
+      "errors": [
+        {
+          "field": "gender",
+          "message": "Value error, gender: допустимы только 'М' или 'Ж'"
+        }
+      ]
+    },
+    {
+      "row": 409,
+      "errors": [
+        {
+          "field": "salary",
+          "message": "Input should be greater than 0"
+        },
+        {
+          "field": "inn",
+          "message": "Value error, inn: неверный формат или контрольная сумма"
+        }
+      ]
+    },
+    {
+      "row": 415,
+      "errors": [
+        {
+          "field": "hire_date",
+          "message": "Value error, Не удалось распознать дату: '8.13.2024'"
+        }
+      ]
+    },
+    {
+      "row": 419,
+      "errors": [
+        {
+          "field": "salary",
+          "message": "Input should be a valid number, unable to parse string as a number"
+        }
+      ]
+    },
+    {
+      "row": 430,
+      "errors": [
+        {
+          "field": "position",
+          "message": "Input should be a valid string"
+        },
+        {
+          "field": "gender",
+          "message": "Value error, gender: допустимы только 'М' или 'Ж'"
+        }
+      ]
+    },
+    {
+      "row": 431,
+      "errors": [
+        {
+          "field": "passport_series",
+          "message": "Value error, passport_series: 4 цифры"
+        }
+      ]
+    },
+    {
+      "row": 432,
+      "errors": [
+        {
+          "field": "",
+          "message": "Value error, birth_date: дата рождения не может быть в будущем"
+        }
+      ]
+    },
+    {
+      "row": 433,
+      "errors": [
+        {
+          "field": "salary",
+          "message": "Input should be a valid number"
+        }
+      ]
+    },
+    {
+      "row": 435,
+      "errors": [
+        {
+          "field": "snils",
+          "message": "Value error, snils: неверный формат или контрольная сумма"
+        }
+      ]
+    },
+    {
+      "row": 438,
+      "errors": [
+        {
+          "field": "gender",
+          "message": "Value error, gender: допустимы только 'М' или 'Ж'"
+        },
+        {
+          "field": "inn",
+          "message": "Value error, inn: неверный формат или контрольная сумма"
+        }
+      ]
+    },
+    {
+      "row": 445,
+      "errors": [
+        {
+          "field": "gender",
+          "message": "Value error, gender: допустимы только 'М' или 'Ж'"
+        }
+      ]
+    },
+    {
+      "row": 454,
+      "errors": [
+        {
+          "field": "hire_date",
+          "message": "Value error, Не удалось распознать дату: '15.13.2024'"
+        },
+        {
+          "field": "inn",
+          "message": "Value error, inn: неверный формат или контрольная сумма"
+        }
+      ]
+    },
+    {
+      "row": 455,
+      "errors": [
+        {
+          "field": "inn",
+          "message": "Value error, inn: неверный формат или контрольная сумма"
+        },
+        {
+          "field": "snils",
+          "message": "Value error, snils: неверный формат или контрольная сумма"
+        }
+      ]
+    },
+    {
+      "row": 468,
+      "errors": [
+        {
+          "field": "passport_series",
+          "message": "Value error, passport_series: 4 цифры"
+        }
+      ]
+    },
+    {
+      "row": 472,
+      "errors": [
+        {
+          "field": "hire_date",
+          "message": "Value error, Не удалось распознать дату: '24.13.2024'"
+        },
+        {
+          "field": "gender",
+          "message": "Value error, gender: допустимы только 'М' или 'Ж'"
+        }
+      ]
+    },
+    {
+      "row": 475,
+      "errors": [
+        {
+          "field": "passport_series",
+          "message": "Value error, passport_series: 4 цифры"
+        },
+        {
+          "field": "gender",
+          "message": "Value error, gender: допустимы только 'М' или 'Ж'"
+        }
+      ]
+    },
+    {
+      "row": 484,
+      "errors": [
+        {
+          "field": "gender",
+          "message": "Value error, gender: допустимы только 'М' или 'Ж'"
+        }
+      ]
+    },
+    {
+      "row": 485,
+      "errors": [
+        {
+          "field": "",
+          "message": "Value error, salary: зарплата ниже МРОТ (20 000 ₽)"
+        }
+      ]
+    },
+    {
+      "row": 489,
+      "errors": [
+        {
+          "field": "",
+          "message": "Value error, birth_date: сотруднику 143 лет (максимум 100)"
+        }
+      ]
+    },
+    {
+      "row": 491,
+      "errors": [
+        {
+          "field": "passport_series",
+          "message": "Value error, passport_series: 4 цифры"
+        }
+      ]
+    },
+    {
+      "row": 494,
+      "errors": [
+        {
+          "field": "hire_date",
+          "message": "Value error, Не удалось распознать дату: '23.18.2024'"
+        }
+      ]
+    },
+    {
+      "row": 495,
+      "errors": [
+        {
+          "field": "salary",
+          "message": "Input should be a valid number"
+        }
+      ]
+    },
+    {
+      "row": 506,
+      "errors": [
+        {
+          "field": "position",
+          "message": "Input should be a valid string"
+        }
+      ]
+    },
+    {
+      "row": 508,
+      "errors": [
+        {
+          "field": "salary",
+          "message": "Input should be greater than 0"
+        },
+        {
+          "field": "inn",
+          "message": "Value error, inn: неверный формат или контрольная сумма"
+        }
+      ]
+    },
+    {
+      "row": 509,
+      "errors": [
+        {
+          "field": "inn",
+          "message": "Value error, inn: неверный формат или контрольная сумма"
+        }
+      ]
+    },
+    {
+      "row": 513,
+      "errors": [
+        {
+          "field": "salary",
+          "message": "Input should be a valid number"
+        },
+        {
+          "field": "passport_number",
+          "message": "Value error, passport_number: 6 цифр"
+        }
+      ]
+    },
+    {
+      "row": 515,
+      "errors": [
+        {
+          "field": "",
+          "message": "Value error, hire_date: дата приёма не может быть в будущем"
+        }
+      ]
+    },
+    {
+      "row": 519,
+      "errors": [
+        {
+          "field": "salary",
+          "message": "Input should be greater than 0"
+        }
+      ]
+    },
+    {
+      "row": 521,
+      "errors": [
+        {
+          "field": "salary",
+          "message": "Input should be greater than 0"
+        },
+        {
+          "field": "inn",
+          "message": "Value error, inn: неверный формат или контрольная сумма"
+        }
+      ]
+    },
+    {
+      "row": 522,
+      "errors": [
+        {
+          "field": "salary",
+          "message": "Input should be less than or equal to 5000000"
+        },
+        {
+          "field": "gender",
+          "message": "Value error, gender: допустимы только 'М' или 'Ж'"
+        }
+      ]
+    },
+    {
+      "row": 523,
+      "errors": [
+        {
+          "field": "passport_number",
+          "message": "Value error, passport_number: 6 цифр"
+        }
+      ]
+    },
+    {
+      "row": 527,
+      "errors": [
+        {
+          "field": "position",
+          "message": "Должность 'senior developer' не найдена в справочнике"
+        }
+      ]
+    },
+    {
+      "row": 528,
+      "errors": [
+        {
+          "field": "birth_date",
+          "message": "Value error, Не удалось распознать дату: '9/9/not_a_year'"
+        }
+      ]
+    },
+    {
+      "row": 531,
+      "errors": [
+        {
+          "field": "gender",
+          "message": "Value error, gender: допустимы только 'М' или 'Ж'"
+        }
+      ]
+    },
+    {
+      "row": 546,
+      "errors": [
+        {
+          "field": "",
+          "message": "Value error, birth_date: сотруднику 12 лет (минимум 18)"
+        }
+      ]
+    },
+    {
+      "row": 547,
+      "errors": [
+        {
+          "field": "salary",
+          "message": "Input should be greater than 0"
+        },
+        {
+          "field": "passport_number",
+          "message": "Value error, passport_number: 6 цифр"
+        }
+      ]
+    },
+    {
+      "row": 550,
+      "errors": [
+        {
+          "field": "passport_number",
+          "message": "Value error, passport_number: 6 цифр"
+        }
+      ]
+    },
+    {
+      "row": 553,
+      "errors": [
+        {
+          "field": "position",
+          "message": "Должность 'неопределено' не найдена в справочнике"
+        }
+      ]
+    },
+    {
+      "row": 554,
+      "errors": [
+        {
+          "field": "",
+          "message": "Value error, hire_date: дата приёма не может быть в будущем"
+        }
+      ]
+    },
+    {
+      "row": 559,
+      "errors": [
+        {
+          "field": "",
+          "message": "Value error, birth_date: сотруднику 15 лет (минимум 18)"
+        }
+      ]
+    },
+    {
+      "row": 561,
+      "errors": [
+        {
+          "field": "position",
+          "message": "Input should be a valid string"
+        },
+        {
+          "field": "gender",
+          "message": "Value error, gender: допустимы только 'М' или 'Ж'"
+        }
+      ]
+    },
+    {
+      "row": 571,
+      "errors": [
+        {
+          "field": "gender",
+          "message": "Value error, gender: допустимы только 'М' или 'Ж'"
+        }
+      ]
+    },
+    {
+      "row": 572,
+      "errors": [
+        {
+          "field": "position",
+          "message": "Должность 'senior developer' не найдена в справочнике"
+        }
+      ]
+    },
+    {
+      "row": 577,
+      "errors": [
+        {
+          "field": "passport_series",
+          "message": "Value error, passport_series: 4 цифры"
+        }
+      ]
+    },
+    {
+      "row": 580,
+      "errors": [
+        {
+          "field": "gender",
+          "message": "Value error, gender: допустимы только 'М' или 'Ж'"
+        }
+      ]
+    },
+    {
+      "row": 582,
+      "errors": [
+        {
+          "field": "",
+          "message": "Value error, birth_date: сотруднику 13 лет (минимум 18)"
+        }
+      ]
+    },
+    {
+      "row": 587,
+      "errors": [
+        {
+          "field": "position",
+          "message": "Должность 'senior developer' не найдена в справочнике"
+        }
+      ]
+    },
+    {
+      "row": 589,
+      "errors": [
+        {
+          "field": "inn",
+          "message": "Value error, inn: неверный формат или контрольная сумма"
+        }
+      ]
+    },
+    {
+      "row": 590,
+      "errors": [
+        {
+          "field": "position",
+          "message": "Должность 'senior developer' не найдена в справочнике"
+        }
+      ]
+    },
+    {
+      "row": 592,
+      "errors": [
+        {
+          "field": "position",
+          "message": "Должность 'главный инженер' не найдена в справочнике"
+        }
+      ]
+    },
+    {
+      "row": 594,
+      "errors": [
+        {
+          "field": "salary",
+          "message": "Input should be a valid number, unable to parse string as a number"
+        },
+        {
+          "field": "snils",
+          "message": "Value error, snils: неверный формат или контрольная сумма"
+        }
+      ]
+    },
+    {
+      "row": 599,
+      "errors": [
+        {
+          "field": "passport_number",
+          "message": "Value error, passport_number: 6 цифр"
+        }
+      ]
+    },
+    {
+      "row": 600,
+      "errors": [
+        {
+          "field": "position",
+          "message": "Должность 'senior developer' не найдена в справочнике"
+        }
+      ]
+    },
+    {
+      "row": 603,
+      "errors": [
+        {
+          "field": "birth_date",
+          "message": "Value error, Не удалось распознать дату: '21/12/not_a_year'"
+        }
+      ]
+    },
+    {
+      "row": 609,
+      "errors": [
+        {
+          "field": "position",
+          "message": "Должность 'неопределено' не найдена в справочнике"
+        }
+      ]
+    },
+    {
+      "row": 613,
+      "errors": [
+        {
+          "field": "salary",
+          "message": "Input should be less than or equal to 5000000"
+        }
+      ]
+    },
+    {
+      "row": 619,
+      "errors": [
+        {
+          "field": "",
+          "message": "Value error, salary: зарплата ниже МРОТ (20 000 ₽)"
+        }
+      ]
+    },
+    {
+      "row": 620,
+      "errors": [
+        {
+          "field": "birth_date",
+          "message": "Value error, Не удалось распознать дату: '8/4/not_a_year'"
+        },
+        {
+          "field": "inn",
+          "message": "Value error, inn: неверный формат или контрольная сумма"
+        }
+      ]
+    },
+    {
+      "row": 621,
+      "errors": [
+        {
+          "field": "snils",
+          "message": "Value error, snils: неверный формат или контрольная сумма"
+        }
+      ]
+    },
+    {
+      "row": 623,
+      "errors": [
+        {
+          "field": "position",
+          "message": "Input should be a valid string"
+        }
+      ]
+    },
+    {
+      "row": 628,
+      "errors": [
+        {
+          "field": "gender",
+          "message": "Value error, gender: допустимы только 'М' или 'Ж'"
+        }
+      ]
+    },
+    {
+      "row": 638,
+      "errors": [
+        {
+          "field": "position",
+          "message": "Input should be a valid string"
+        },
+        {
+          "field": "gender",
+          "message": "Value error, gender: допустимы только 'М' или 'Ж'"
+        }
+      ]
+    },
+    {
+      "row": 639,
+      "errors": [
+        {
+          "field": "gender",
+          "message": "Value error, gender: допустимы только 'М' или 'Ж'"
+        }
+      ]
+    },
+    {
+      "row": 641,
+      "errors": [
+        {
+          "field": "salary",
+          "message": "Input should be a valid number"
+        },
+        {
+          "field": "gender",
+          "message": "Value error, gender: допустимы только 'М' или 'Ж'"
+        }
+      ]
+    },
+    {
+      "row": 648,
+      "errors": [
+        {
+          "field": "passport_series",
+          "message": "Value error, passport_series: 4 цифры"
+        }
+      ]
+    },
+    {
+      "row": 649,
+      "errors": [
+        {
+          "field": "",
+          "message": "Value error, birth_date: сотруднику 12 лет (минимум 18)"
+        }
+      ]
+    },
+    {
+      "row": 653,
+      "errors": [
+        {
+          "field": "salary",
+          "message": "Input should be greater than 0"
+        }
+      ]
+    },
+    {
+      "row": 658,
+      "errors": [
+        {
+          "field": "gender",
+          "message": "Value error, gender: допустимы только 'М' или 'Ж'"
+        }
+      ]
+    },
+    {
+      "row": 660,
+      "errors": [
+        {
+          "field": "gender",
+          "message": "Value error, gender: допустимы только 'М' или 'Ж'"
+        },
+        {
+          "field": "inn",
+          "message": "Value error, inn: неверный формат или контрольная сумма"
+        }
+      ]
+    },
+    {
+      "row": 661,
+      "errors": [
+        {
+          "field": "hire_date",
+          "message": "Value error, Не удалось распознать дату: '1.18.2024'"
+        }
+      ]
+    },
+    {
+      "row": 662,
+      "errors": [
+        {
+          "field": "position",
+          "message": "Input should be a valid string"
+        },
+        {
+          "field": "gender",
+          "message": "Value error, gender: допустимы только 'М' или 'Ж'"
+        }
+      ]
+    },
+    {
+      "row": 668,
+      "errors": [
+        {
+          "field": "inn",
+          "message": "Value error, inn: неверный формат или контрольная сумма"
+        }
+      ]
+    },
+    {
+      "row": 669,
+      "errors": [
+        {
+          "field": "birth_date",
+          "message": "Value error, Не удалось распознать дату: '11/4/not_a_year'"
+        }
+      ]
+    },
+    {
+      "row": 674,
+      "errors": [
+        {
+          "field": "salary",
+          "message": "Input should be less than or equal to 5000000"
+        },
+        {
+          "field": "passport_number",
+          "message": "Value error, passport_number: 6 цифр"
+        }
+      ]
+    },
+    {
+      "row": 675,
+      "errors": [
+        {
+          "field": "salary",
+          "message": "Input should be a valid number, unable to parse string as a number"
+        }
+      ]
+    },
+    {
+      "row": 676,
+      "errors": [
+        {
+          "field": "",
+          "message": "Value error, birth_date: дата рождения не может быть в будущем"
+        }
+      ]
+    },
+    {
+      "row": 683,
+      "errors": [
+        {
+          "field": "passport_number",
+          "message": "Value error, passport_number: 6 цифр"
+        }
+      ]
+    },
+    {
+      "row": 686,
+      "errors": [
+        {
+          "field": "inn",
+          "message": "Value error, inn: неверный формат или контрольная сумма"
+        },
+        {
+          "field": "snils",
+          "message": "Value error, snils: неверный формат или контрольная сумма"
+        }
+      ]
+    },
+    {
+      "row": 687,
+      "errors": [
+        {
+          "field": "passport_series",
+          "message": "Value error, passport_series: 4 цифры"
+        }
+      ]
+    },
+    {
+      "row": 689,
+      "errors": [
+        {
+          "field": "hire_date",
+          "message": "Value error, Не удалось распознать дату: '7.19.2024'"
+        }
+      ]
+    },
+    {
+      "row": 691,
+      "errors": [
+        {
+          "field": "inn",
+          "message": "Value error, inn: неверный формат или контрольная сумма"
+        }
+      ]
+    },
+    {
+      "row": 698,
+      "errors": [
+        {
+          "field": "birth_date",
+          "message": "Value error, Не удалось распознать дату: '16/2/not_a_year'"
+        },
+        {
+          "field": "position",
+          "message": "Input should be a valid string"
+        }
+      ]
+    },
+    {
+      "row": 705,
+      "errors": [
+        {
+          "field": "gender",
+          "message": "Value error, gender: допустимы только 'М' или 'Ж'"
+        },
+        {
+          "field": "snils",
+          "message": "Value error, snils: неверный формат или контрольная сумма"
+        }
+      ]
+    },
+    {
+      "row": 707,
+      "errors": [
+        {
+          "field": "hire_date",
+          "message": "Value error, Не удалось распознать дату: '8.19.2024'"
+        },
+        {
+          "field": "gender",
+          "message": "Value error, gender: допустимы только 'М' или 'Ж'"
+        }
+      ]
+    },
+    {
+      "row": 709,
+      "errors": [
+        {
+          "field": "passport_series",
+          "message": "Value error, passport_series: 4 цифры"
+        }
+      ]
+    },
+    {
+      "row": 712,
+      "errors": [
+        {
+          "field": "gender",
+          "message": "Value error, gender: допустимы только 'М' или 'Ж'"
+        },
+        {
+          "field": "snils",
+          "message": "Value error, snils: неверный формат или контрольная сумма"
+        }
+      ]
+    },
+    {
+      "row": 713,
+      "errors": [
+        {
+          "field": "inn",
+          "message": "Value error, inn: неверный формат или контрольная сумма"
+        },
+        {
+          "field": "snils",
+          "message": "Value error, snils: неверный формат или контрольная сумма"
+        }
+      ]
+    },
+    {
+      "row": 714,
+      "errors": [
+        {
+          "field": "",
+          "message": "Value error, birth_date: дата рождения не может быть в будущем"
+        }
+      ]
+    },
+    {
+      "row": 718,
+      "errors": [
+        {
+          "field": "",
+          "message": "Value error, birth_date: сотруднику 145 лет (максимум 100)"
+        }
+      ]
+    },
+    {
+      "row": 725,
+      "errors": [
+        {
+          "field": "hire_date",
+          "message": "Value error, Не удалось распознать дату: '1.15.2024'"
+        }
+      ]
+    },
+    {
+      "row": 726,
+      "errors": [
+        {
+          "field": "birth_date",
+          "message": "Value error, Не удалось распознать дату: '22/4/not_a_year'"
+        }
+      ]
+    },
+    {
+      "row": 732,
+      "errors": [
+        {
+          "field": "",
+          "message": "Value error, birth_date: сотруднику 144 лет (максимум 100)"
+        }
+      ]
+    },
+    {
+      "row": 733,
+      "errors": [
+        {
+          "field": "hire_date",
+          "message": "Value error, Не удалось распознать дату: '5.16.2024'"
+        },
+        {
+          "field": "gender",
+          "message": "Value error, gender: допустимы только 'М' или 'Ж'"
+        },
+        {
+          "field": "inn",
+          "message": "Value error, inn: неверный формат или контрольная сумма"
+        }
+      ]
+    },
+    {
+      "row": 739,
+      "errors": [
+        {
+          "field": "",
+          "message": "Value error, hire_date: дата приёма раньше даты рождения"
+        }
+      ]
+    },
+    {
+      "row": 742,
+      "errors": [
+        {
+          "field": "",
+          "message": "Value error, salary: зарплата ниже МРОТ (20 000 ₽)"
+        }
+      ]
+    },
+    {
+      "row": 744,
+      "errors": [
+        {
+          "field": "birth_date",
+          "message": "Value error, Не удалось распознать дату: '29/9/not_a_year'"
+        },
+        {
+          "field": "passport_series",
+          "message": "Value error, passport_series: 4 цифры"
+        }
+      ]
+    },
+    {
+      "row": 745,
+      "errors": [
+        {
+          "field": "inn",
+          "message": "Value error, inn: неверный формат или контрольная сумма"
+        }
+      ]
+    },
+    {
+      "row": 748,
+      "errors": [
+        {
+          "field": "gender",
+          "message": "Value error, gender: допустимы только 'М' или 'Ж'"
+        }
+      ]
+    },
+    {
+      "row": 749,
+      "errors": [
+        {
+          "field": "hire_date",
+          "message": "Value error, Не удалось распознать дату: '2.13.2024'"
+        }
+      ]
+    },
+    {
+      "row": 751,
+      "errors": [
+        {
+          "field": "",
+          "message": "Value error, birth_date: дата рождения не может быть в будущем"
+        }
+      ]
+    },
+    {
+      "row": 753,
+      "errors": [
+        {
+          "field": "position",
+          "message": "Должность 'главный инженер' не найдена в справочнике"
+        }
+      ]
+    },
+    {
+      "row": 755,
+      "errors": [
+        {
+          "field": "passport_number",
+          "message": "Value error, passport_number: 6 цифр"
+        }
+      ]
+    },
+    {
+      "row": 768,
+      "errors": [
+        {
+          "field": "salary",
+          "message": "Input should be a valid number"
+        }
+      ]
+    },
+    {
+      "row": 770,
+      "errors": [
+        {
+          "field": "",
+          "message": "Value error, birth_date: сотруднику 8 лет (минимум 18)"
+        }
+      ]
+    },
+    {
+      "row": 772,
+      "errors": [
+        {
+          "field": "",
+          "message": "Value error, hire_date: дата приёма не может быть в будущем"
+        }
+      ]
+    },
+    {
+      "row": 774,
+      "errors": [
+        {
+          "field": "position",
+          "message": "Input should be a valid string"
+        },
+        {
+          "field": "snils",
+          "message": "Value error, snils: неверный формат или контрольная сумма"
+        }
+      ]
+    },
+    {
+      "row": 784,
+      "errors": [
+        {
+          "field": "",
+          "message": "Value error, birth_date: сотруднику 11 лет (минимум 18)"
+        }
+      ]
+    },
+    {
+      "row": 785,
+      "errors": [
+        {
+          "field": "salary",
+          "message": "Input should be less than or equal to 5000000"
+        }
+      ]
+    },
+    {
+      "row": 789,
+      "errors": [
+        {
+          "field": "snils",
+          "message": "Value error, snils: неверный формат или контрольная сумма"
+        }
+      ]
+    },
+    {
+      "row": 794,
+      "errors": [
+        {
+          "field": "inn",
+          "message": "Value error, inn: неверный формат или контрольная сумма"
+        }
+      ]
+    },
+    {
+      "row": 797,
+      "errors": [
+        {
+          "field": "",
+          "message": "Value error, birth_date: сотруднику 144 лет (максимум 100)"
+        }
+      ]
+    },
+    {
+      "row": 798,
+      "errors": [
+        {
+          "field": "inn",
+          "message": "Value error, inn: неверный формат или контрольная сумма"
+        },
+        {
+          "field": "snils",
+          "message": "Value error, snils: неверный формат или контрольная сумма"
+        }
+      ]
+    },
+    {
+      "row": 799,
+      "errors": [
+        {
+          "field": "hire_date",
+          "message": "Value error, Не удалось распознать дату: '9.18.2024'"
+        },
+        {
+          "field": "salary",
+          "message": "Input should be greater than 0"
+        }
+      ]
+    },
+    {
+      "row": 804,
+      "errors": [
+        {
+          "field": "snils",
+          "message": "Value error, snils: неверный формат или контрольная сумма"
+        }
+      ]
+    },
+    {
+      "row": 806,
+      "errors": [
+        {
+          "field": "passport_number",
+          "message": "Value error, passport_number: 6 цифр"
+        },
+        {
+          "field": "inn",
+          "message": "Value error, inn: неверный формат или контрольная сумма"
+        }
+      ]
+    },
+    {
+      "row": 810,
+      "errors": [
+        {
+          "field": "",
+          "message": "Value error, hire_date: дата приёма раньше даты рождения"
+        }
+      ]
+    },
+    {
+      "row": 812,
+      "errors": [
+        {
+          "field": "gender",
+          "message": "Value error, gender: допустимы только 'М' или 'Ж'"
+        }
+      ]
+    },
+    {
+      "row": 813,
+      "errors": [
+        {
+          "field": "position",
+          "message": "Input should be a valid string"
+        },
+        {
+          "field": "salary",
+          "message": "Input should be greater than 0"
+        }
+      ]
+    },
+    {
+      "row": 821,
+      "errors": [
+        {
+          "field": "passport_number",
+          "message": "Value error, passport_number: 6 цифр"
+        },
+        {
+          "field": "inn",
+          "message": "Value error, inn: неверный формат или контрольная сумма"
+        }
+      ]
+    },
+    {
+      "row": 822,
+      "errors": [
+        {
+          "field": "hire_date",
+          "message": "Value error, Не удалось распознать дату: '23.16.2024'"
+        }
+      ]
+    },
+    {
+      "row": 823,
+      "errors": [
+        {
+          "field": "snils",
+          "message": "Value error, snils: неверный формат или контрольная сумма"
+        }
+      ]
+    },
+    {
+      "row": 834,
+      "errors": [
+        {
+          "field": "",
+          "message": "Value error, birth_date: сотруднику 15 лет (минимум 18)"
+        }
+      ]
+    },
+    {
+      "row": 835,
+      "errors": [
+        {
+          "field": "snils",
+          "message": "Value error, snils: неверный формат или контрольная сумма"
+        }
+      ]
+    },
+    {
+      "row": 842,
+      "errors": [
+        {
+          "field": "salary",
+          "message": "Input should be a valid number"
+        },
+        {
+          "field": "gender",
+          "message": "Value error, gender: допустимы только 'М' или 'Ж'"
+        },
+        {
+          "field": "snils",
+          "message": "Value error, snils: неверный формат или контрольная сумма"
+        }
+      ]
+    },
+    {
+      "row": 843,
+      "errors": [
+        {
+          "field": "salary",
+          "message": "Input should be less than or equal to 5000000"
+        },
+        {
+          "field": "passport_number",
+          "message": "Value error, passport_number: 6 цифр"
+        }
+      ]
+    },
+    {
+      "row": 847,
+      "errors": [
+        {
+          "field": "position",
+          "message": "Input should be a valid string"
+        }
+      ]
+    },
+    {
+      "row": 852,
+      "errors": [
+        {
+          "field": "",
+          "message": "Value error, birth_date: сотруднику 121 лет (максимум 100)"
+        }
+      ]
+    },
+    {
+      "row": 855,
+      "errors": [
+        {
+          "field": "snils",
+          "message": "Value error, snils: неверный формат или контрольная сумма"
+        }
+      ]
+    },
+    {
+      "row": 857,
+      "errors": [
+        {
+          "field": "gender",
+          "message": "Value error, gender: допустимы только 'М' или 'Ж'"
+        }
+      ]
+    },
+    {
+      "row": 858,
+      "errors": [
+        {
+          "field": "inn",
+          "message": "Value error, inn: неверный формат или контрольная сумма"
+        }
+      ]
+    },
+    {
+      "row": 869,
+      "errors": [
+        {
+          "field": "gender",
+          "message": "Value error, gender: допустимы только 'М' или 'Ж'"
+        },
+        {
+          "field": "inn",
+          "message": "Value error, inn: неверный формат или контрольная сумма"
+        }
+      ]
+    },
+    {
+      "row": 877,
+      "errors": [
+        {
+          "field": "salary",
+          "message": "Input should be greater than 0"
+        },
+        {
+          "field": "gender",
+          "message": "Value error, gender: допустимы только 'М' или 'Ж'"
+        }
+      ]
+    },
+    {
+      "row": 883,
+      "errors": [
+        {
+          "field": "position",
+          "message": "Должность 'неопределено' не найдена в справочнике"
+        }
+      ]
+    },
+    {
+      "row": 888,
+      "errors": [
+        {
+          "field": "salary",
+          "message": "Input should be less than or equal to 5000000"
+        }
+      ]
+    },
+    {
+      "row": 890,
+      "errors": [
+        {
+          "field": "gender",
+          "message": "Value error, gender: допустимы только 'М' или 'Ж'"
+        },
+        {
+          "field": "inn",
+          "message": "Value error, inn: неверный формат или контрольная сумма"
+        }
+      ]
+    },
+    {
+      "row": 891,
+      "errors": [
+        {
+          "field": "",
+          "message": "Value error, birth_date: сотруднику 10 лет (минимум 18)"
+        }
+      ]
+    },
+    {
+      "row": 893,
+      "errors": [
+        {
+          "field": "gender",
+          "message": "Value error, gender: допустимы только 'М' или 'Ж'"
+        },
+        {
+          "field": "inn",
+          "message": "Value error, inn: неверный формат или контрольная сумма"
+        }
+      ]
+    },
+    {
+      "row": 898,
+      "errors": [
+        {
+          "field": "inn",
+          "message": "Value error, inn: неверный формат или контрольная сумма"
+        }
+      ]
+    },
+    {
+      "row": 899,
+      "errors": [
+        {
+          "field": "salary",
+          "message": "Input should be greater than 0"
+        }
+      ]
+    },
+    {
+      "row": 900,
+      "errors": [
+        {
+          "field": "birth_date",
+          "message": "Value error, Не удалось распознать дату: '13/8/not_a_year'"
+        }
+      ]
+    },
+    {
+      "row": 903,
+      "errors": [
+        {
+          "field": "inn",
+          "message": "Value error, inn: неверный формат или контрольная сумма"
+        }
+      ]
+    },
+    {
+      "row": 909,
+      "errors": [
+        {
+          "field": "gender",
+          "message": "Value error, gender: допустимы только 'М' или 'Ж'"
+        }
+      ]
+    },
+    {
+      "row": 910,
+      "errors": [
+        {
+          "field": "salary",
+          "message": "Input should be a valid number, unable to parse string as a number"
+        },
+        {
+          "field": "snils",
+          "message": "Value error, snils: неверный формат или контрольная сумма"
+        }
+      ]
+    },
+    {
+      "row": 911,
+      "errors": [
+        {
+          "field": "passport_series",
+          "message": "Value error, passport_series: 4 цифры"
+        }
+      ]
+    },
+    {
+      "row": 917,
+      "errors": [
+        {
+          "field": "passport_series",
+          "message": "Value error, passport_series: 4 цифры"
+        }
+      ]
+    },
+    {
+      "row": 919,
+      "errors": [
+        {
+          "field": "passport_series",
+          "message": "Value error, passport_series: 4 цифры"
+        },
+        {
+          "field": "inn",
+          "message": "Value error, inn: неверный формат или контрольная сумма"
+        }
+      ]
+    },
+    {
+      "row": 925,
+      "errors": [
+        {
+          "field": "salary",
+          "message": "Input should be greater than 0"
+        }
+      ]
+    },
+    {
+      "row": 928,
+      "errors": [
+        {
+          "field": "gender",
+          "message": "Value error, gender: допустимы только 'М' или 'Ж'"
+        }
+      ]
+    },
+    {
+      "row": 932,
+      "errors": [
+        {
+          "field": "salary",
+          "message": "Input should be greater than 0"
+        }
+      ]
+    },
+    {
+      "row": 935,
+      "errors": [
+        {
+          "field": "position",
+          "message": "Input should be a valid string"
+        },
+        {
+          "field": "passport_number",
+          "message": "Value error, passport_number: 6 цифр"
+        }
+      ]
+    },
+    {
+      "row": 936,
+      "errors": [
+        {
+          "field": "salary",
+          "message": "Input should be a valid number"
+        },
+        {
+          "field": "gender",
+          "message": "Value error, gender: допустимы только 'М' или 'Ж'"
+        }
+      ]
+    },
+    {
+      "row": 939,
+      "errors": [
+        {
+          "field": "salary",
+          "message": "Input should be greater than 0"
+        }
+      ]
+    },
+    {
+      "row": 943,
+      "errors": [
+        {
+          "field": "gender",
+          "message": "Value error, gender: допустимы только 'М' или 'Ж'"
+        },
+        {
+          "field": "snils",
+          "message": "Value error, snils: неверный формат или контрольная сумма"
+        }
+      ]
+    },
+    {
+      "row": 950,
+      "errors": [
+        {
+          "field": "gender",
+          "message": "Value error, gender: допустимы только 'М' или 'Ж'"
+        }
+      ]
+    },
+    {
+      "row": 953,
+      "errors": [
+        {
+          "field": "salary",
+          "message": "Input should be less than or equal to 5000000"
+        }
+      ]
+    },
+    {
+      "row": 961,
+      "errors": [
+        {
+          "field": "gender",
+          "message": "Value error, gender: допустимы только 'М' или 'Ж'"
+        }
+      ]
+    },
+    {
+      "row": 968,
+      "errors": [
+        {
+          "field": "passport_series",
+          "message": "Value error, passport_series: 4 цифры"
+        },
+        {
+          "field": "inn",
+          "message": "Value error, inn: неверный формат или контрольная сумма"
+        }
+      ]
+    },
+    {
+      "row": 970,
+      "errors": [
+        {
+          "field": "hire_date",
+          "message": "Value error, Не удалось распознать дату: '15.15.2024'"
+        },
+        {
+          "field": "inn",
+          "message": "Value error, inn: неверный формат или контрольная сумма"
+        }
+      ]
+    },
+    {
+      "row": 972,
+      "errors": [
+        {
+          "field": "salary",
+          "message": "Input should be greater than 0"
+        }
+      ]
+    },
+    {
+      "row": 973,
+      "errors": [
+        {
+          "field": "",
+          "message": "Value error, hire_date: дата приёма не может быть в будущем"
+        }
+      ]
+    },
+    {
+      "row": 975,
+      "errors": [
+        {
+          "field": "salary",
+          "message": "Input should be less than or equal to 5000000"
+        },
+        {
+          "field": "passport_series",
+          "message": "Value error, passport_series: 4 цифры"
+        },
+        {
+          "field": "inn",
+          "message": "Value error, inn: неверный формат или контрольная сумма"
+        }
+      ]
+    },
+    {
+      "row": 984,
+      "errors": [
+        {
+          "field": "",
+          "message": "Value error, salary: зарплата ниже МРОТ (20 000 ₽)"
+        }
+      ]
+    },
+    {
+      "row": 994,
+      "errors": [
+        {
+          "field": "snils",
+          "message": "Value error, snils: неверный формат или контрольная сумма"
+        }
+      ]
+    },
+    {
+      "row": 1001,
+      "errors": [
+        {
+          "field": "",
+          "message": "Value error, hire_date: дата приёма раньше даты рождения"
+        }
+      ]
+    },
+    {
+      "row": 1003,
+      "errors": [
+        {
+          "field": "hire_date",
+          "message": "Value error, Не удалось распознать дату: '23.18.2024'"
+        }
+      ]
+    },
+    {
+      "row": 1004,
+      "errors": [
+        {
+          "field": "gender",
+          "message": "Value error, gender: допустимы только 'М' или 'Ж'"
+        }
+      ]
+    },
+    {
+      "row": 1008,
+      "errors": [
+        {
+          "field": "gender",
+          "message": "Value error, gender: допустимы только 'М' или 'Ж'"
+        },
+        {
+          "field": "inn",
+          "message": "Value error, inn: неверный формат или контрольная сумма"
+        }
+      ]
+    },
+    {
+      "row": 1009,
+      "errors": [
+        {
+          "field": "",
+          "message": "Value error, birth_date: сотруднику 13 лет (минимум 18)"
+        }
+      ]
+    },
+    {
+      "row": 1015,
+      "errors": [
+        {
+          "field": "position",
+          "message": "Должность 'неопределено' не найдена в справочнике"
+        }
+      ]
+    },
+    {
+      "row": 1016,
+      "errors": [
+        {
+          "field": "passport_series",
+          "message": "Value error, passport_series: 4 цифры"
+        },
+        {
+          "field": "inn",
+          "message": "Value error, inn: неверный формат или контрольная сумма"
+        }
+      ]
+    },
+    {
+      "row": 1022,
+      "errors": [
+        {
+          "field": "passport_series",
+          "message": "Value error, passport_series: 4 цифры"
+        }
+      ]
+    },
+    {
+      "row": 1024,
+      "errors": [
+        {
+          "field": "gender",
+          "message": "Value error, gender: допустимы только 'М' или 'Ж'"
+        },
+        {
+          "field": "inn",
+          "message": "Value error, inn: неверный формат или контрольная сумма"
+        }
+      ]
+    },
+    {
+      "row": 1025,
+      "errors": [
+        {
+          "field": "birth_date",
+          "message": "Value error, Не удалось распознать дату: '20/12/not_a_year'"
+        },
+        {
+          "field": "inn",
+          "message": "Value error, inn: неверный формат или контрольная сумма"
+        }
+      ]
+    },
+    {
+      "row": 1026,
+      "errors": [
+        {
+          "field": "passport_series",
+          "message": "Value error, passport_series: 4 цифры"
+        },
+        {
+          "field": "gender",
+          "message": "Value error, gender: допустимы только 'М' или 'Ж'"
+        }
+      ]
+    },
+    {
+      "row": 1028,
+      "errors": [
+        {
+          "field": "birth_date",
+          "message": "Value error, Не удалось распознать дату: '30/5/not_a_year'"
+        },
+        {
+          "field": "hire_date",
+          "message": "Value error, Не удалось распознать дату: '31.20.2024'"
+        }
+      ]
+    },
+    {
+      "row": 1031,
+      "errors": [
+        {
+          "field": "passport_number",
+          "message": "Value error, passport_number: 6 цифр"
+        },
+        {
+          "field": "inn",
+          "message": "Value error, inn: неверный формат или контрольная сумма"
+        }
+      ]
+    },
+    {
+      "row": 1032,
+      "errors": [
+        {
+          "field": "inn",
+          "message": "Value error, inn: неверный формат или контрольная сумма"
+        }
+      ]
+    },
+    {
+      "row": 1033,
+      "errors": [
+        {
+          "field": "passport_series",
+          "message": "Value error, passport_series: 4 цифры"
+        }
+      ]
+    },
+    {
+      "row": 1036,
+      "errors": [
+        {
+          "field": "inn",
+          "message": "Value error, inn: неверный формат или контрольная сумма"
+        }
+      ]
+    },
+    {
+      "row": 1043,
+      "errors": [
+        {
+          "field": "position",
+          "message": "Должность 'неопределено' не найдена в справочнике"
+        }
+      ]
+    }
+  ]
+}

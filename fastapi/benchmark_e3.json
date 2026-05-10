@@ -1,0 +1,26 @@
+{
+  "500": {
+    "size": 500,
+    "strategies": {
+      "INSERT": 0.152,
+      "executemany": 0.156,
+      "COPY": 0.051
+    }
+  },
+  "1000": {
+    "size": 1000,
+    "strategies": {
+      "INSERT": 0.31,
+      "executemany": 0.284,
+      "COPY": 0.038
+    }
+  },
+  "5000": {
+    "size": 5000,
+    "strategies": {
+      "INSERT": 1.466,
+      "executemany": 1.608,
+      "COPY": 0.062
+    }
+  }
+}

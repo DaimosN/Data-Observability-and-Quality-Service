@@ -1,0 +1,517 @@
+{
+  "parameters": {
+    "size": 100,
+    "noise": 0.0,
+    "duplicates": 0.0,
+    "seed": 42,
+    "output": "datasets/-100-clean.xlsx"
+  },
+  "stats": {
+    "total": 100,
+    "valid": 100,
+    "corrupt": 0,
+    "duplicates": 0
+  },
+  "manifest": [
+    {
+      "row": 2,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 3,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 4,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 5,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 6,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 7,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 8,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 9,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 10,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 11,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 12,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 13,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 14,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 15,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 16,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 17,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 18,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 19,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 20,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 21,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 22,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 23,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 24,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 25,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 26,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 27,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 28,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 29,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 30,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 31,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 32,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 33,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 34,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 35,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 36,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 37,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 38,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 39,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 40,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 41,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 42,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 43,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 44,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 45,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 46,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 47,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 48,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 49,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 50,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 51,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 52,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 53,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 54,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 55,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 56,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 57,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 58,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 59,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 60,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 61,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 62,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 63,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 64,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 65,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 66,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 67,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 68,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 69,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 70,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 71,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 72,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 73,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 74,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 75,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 76,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 77,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 78,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 79,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 80,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 81,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 82,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 83,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 84,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 85,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 86,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 87,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 88,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 89,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 90,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 91,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 92,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 93,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 94,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 95,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 96,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 97,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 98,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 99,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 100,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 101,
+      "status": "valid",
+      "defects": []
+    }
+  ]
+}

@@ -1,0 +1,3425 @@
+{
+  "parameters": {
+    "size": 500,
+    "noise": 0.05,
+    "duplicates": 0.2,
+    "seed": 200,
+    "output": "datasets/-500-dupes.xlsx"
+  },
+  "stats": {
+    "total": 600,
+    "valid": 463,
+    "corrupt": 37,
+    "duplicates": 100
+  },
+  "manifest": [
+    {
+      "row": 2,
+      "status": "corrupt",
+      "defects": [
+        "birth_date_too_old"
+      ]
+    },
+    {
+      "row": 3,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 4,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 5,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 6,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 7,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 8,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 9,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 10,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 11,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 12,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 13,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 14,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 15,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 16,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 17,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 18,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 19,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 20,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 21,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 22,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 23,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 24,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 25,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 26,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 27,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 28,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 29,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 30,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 31,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 32,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 33,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 34,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 35,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 36,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 37,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 38,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 39,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 40,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 41,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 42,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 43,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 44,
+      "status": "corrupt",
+      "defects": [
+        "hire_date_bad_format",
+        "snils_bad_checksum"
+      ]
+    },
+    {
+      "row": 45,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 46,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 47,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 48,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 49,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 50,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 51,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 52,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 53,
+      "status": "corrupt",
+      "defects": [
+        "birth_date_too_old",
+        "passport_number_short"
+      ]
+    },
+    {
+      "row": 54,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 55,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 56,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 57,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 58,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 59,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 60,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 61,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 62,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 63,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 64,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 65,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 66,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 67,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 68,
+      "status": "corrupt",
+      "defects": [
+        "salary_zero"
+      ]
+    },
+    {
+      "row": 69,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 70,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 71,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 72,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 73,
+      "status": "corrupt",
+      "defects": [
+        "passport_number_short"
+      ]
+    },
+    {
+      "row": 74,
+      "status": "corrupt",
+      "defects": [
+        "salary_zero",
+        "gender_invalid",
+        "position_not_in_dict"
+      ]
+    },
+    {
+      "row": 75,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 76,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 77,
+      "status": "corrupt",
+      "defects": [
+        "hire_date_before_birth",
+        "inn_missing"
+      ]
+    },
+    {
+      "row": 78,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 79,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 80,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 81,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 82,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 83,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 84,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 85,
+      "status": "corrupt",
+      "defects": [
+        "hire_date_before_birth",
+        "salary_missing"
+      ]
+    },
+    {
+      "row": 86,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 87,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 88,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 89,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 90,
+      "status": "corrupt",
+      "defects": [
+        "birth_date_future",
+        "passport_letters"
+      ]
+    },
+    {
+      "row": 91,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 92,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 93,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 94,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 95,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 96,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 97,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 98,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 99,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 100,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 101,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 102,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 103,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 104,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 105,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 106,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 107,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 108,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 109,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 110,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 111,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 112,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 113,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 114,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 115,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 116,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 117,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 118,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 119,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 120,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 121,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 122,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 123,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 124,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 125,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 126,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 127,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 128,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 129,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 130,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 131,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 132,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 133,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 134,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 135,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 136,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 137,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 138,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 139,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 140,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 141,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 142,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 143,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 144,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 145,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 146,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 147,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 148,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 149,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 150,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 151,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 152,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 153,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 154,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 155,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 156,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 157,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 158,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 159,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 160,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 161,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 162,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 163,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 164,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 165,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 166,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 167,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 168,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 169,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 170,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 171,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 172,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 173,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 174,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 175,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 176,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 177,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 178,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 179,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 180,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 181,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 182,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 183,
+      "status": "corrupt",
+      "defects": [
+        "passport_series_short",
+        "inn_missing",
+        "gender_invalid"
+      ]
+    },
+    {
+      "row": 184,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 185,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 186,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 187,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 188,
+      "status": "corrupt",
+      "defects": [
+        "hire_date_bad_format"
+      ]
+    },
+    {
+      "row": 189,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 190,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 191,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 192,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 193,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 194,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 195,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 196,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 197,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 198,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 199,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 200,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 201,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 202,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 203,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 204,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 205,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 206,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 207,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 208,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 209,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 210,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 211,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 212,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 213,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 214,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 215,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 216,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 217,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 218,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 219,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 220,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 221,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 222,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 223,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 224,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 225,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 226,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 227,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 228,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 229,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 230,
+      "status": "corrupt",
+      "defects": [
+        "gender_invalid",
+        "position_not_in_dict"
+      ]
+    },
+    {
+      "row": 231,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 232,
+      "status": "corrupt",
+      "defects": [
+        "passport_missing",
+        "snils_missing"
+      ]
+    },
+    {
+      "row": 233,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 234,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 235,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 236,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 237,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 238,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 239,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 240,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 241,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 242,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 243,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 244,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 245,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 246,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 247,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 248,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 249,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 250,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 251,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 252,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 253,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 254,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 255,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 256,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 257,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 258,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 259,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 260,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 261,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 262,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 263,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 264,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 265,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 266,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 267,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 268,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 269,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 270,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 271,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 272,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 273,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 274,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 275,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 276,
+      "status": "corrupt",
+      "defects": [
+        "salary_below_mrot"
+      ]
+    },
+    {
+      "row": 277,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 278,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 279,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 280,
+      "status": "corrupt",
+      "defects": [
+        "passport_number_short",
+        "gender_invalid"
+      ]
+    },
+    {
+      "row": 281,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 282,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 283,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 284,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 285,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 286,
+      "status": "corrupt",
+      "defects": [
+        "hire_date_future",
+        "passport_series_short"
+      ]
+    },
+    {
+      "row": 287,
+      "status": "corrupt",
+      "defects": [
+        "snils_bad_checksum"
+      ]
+    },
+    {
+      "row": 288,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 289,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 290,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 291,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 292,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 293,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 294,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 295,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 296,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 297,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 298,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 299,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 300,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 301,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 302,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 303,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 304,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 305,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 306,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 307,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 308,
+      "status": "corrupt",
+      "defects": [
+        "salary_below_mrot",
+        "passport_series_long"
+      ]
+    },
+    {
+      "row": 309,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 310,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 311,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 312,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 313,
+      "status": "corrupt",
+      "defects": [
+        "passport_series_long",
+        "inn_wrong_length",
+        "gender_invalid"
+      ]
+    },
+    {
+      "row": 314,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 315,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 316,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 317,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 318,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 319,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 320,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 321,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 322,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 323,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 324,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 325,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 326,
+      "status": "corrupt",
+      "defects": [
+        "hire_date_bad_format",
+        "inn_missing"
+      ]
+    },
+    {
+      "row": 327,
+      "status": "corrupt",
+      "defects": [
+        "inn_missing"
+      ]
+    },
+    {
+      "row": 328,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 329,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 330,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 331,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 332,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 333,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 334,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 335,
+      "status": "corrupt",
+      "defects": [
+        "hire_date_future"
+      ]
+    },
+    {
+      "row": 336,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 337,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 338,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 339,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 340,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 341,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 342,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 343,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 344,
+      "status": "corrupt",
+      "defects": [
+        "salary_huge"
+      ]
+    },
+    {
+      "row": 345,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 346,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 347,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 348,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 349,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 350,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 351,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 352,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 353,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 354,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 355,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 356,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 357,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 358,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 359,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 360,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 361,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 362,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 363,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 364,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 365,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 366,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 367,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 368,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 369,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 370,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 371,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 372,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 373,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 374,
+      "status": "corrupt",
+      "defects": [
+        "birth_date_bad_format",
+        "gender_invalid",
+        "position_not_in_dict"
+      ]
+    },
+    {
+      "row": 375,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 376,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 377,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 378,
+      "status": "corrupt",
+      "defects": [
+        "birth_date_bad_format",
+        "salary_string"
+      ]
+    },
+    {
+      "row": 379,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 380,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 381,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 382,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 383,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 384,
+      "status": "corrupt",
+      "defects": [
+        "salary_zero",
+        "gender_invalid"
+      ]
+    },
+    {
+      "row": 385,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 386,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 387,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 388,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 389,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 390,
+      "status": "corrupt",
+      "defects": [
+        "hire_date_before_birth",
+        "gender_invalid",
+        "position_not_in_dict"
+      ]
+    },
+    {
+      "row": 391,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 392,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 393,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 394,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 395,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 396,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 397,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 398,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 399,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 400,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 401,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 402,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 403,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 404,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 405,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 406,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 407,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 408,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 409,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 410,
+      "status": "corrupt",
+      "defects": [
+        "hire_date_future",
+        "inn_wrong_length",
+        "snils_bad_checksum"
+      ]
+    },
+    {
+      "row": 411,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 412,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 413,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 414,
+      "status": "corrupt",
+      "defects": [
+        "birth_date_future",
+        "inn_missing",
+        "snils_missing"
+      ]
+    },
+    {
+      "row": 415,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 416,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 417,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 418,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 419,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 420,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 421,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 422,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 423,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 424,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 425,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 426,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 427,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 428,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 429,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 430,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 431,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 432,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 433,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 434,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 435,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 436,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 437,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 438,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 439,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 440,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 441,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 442,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 443,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 444,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 445,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 446,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 447,
+      "status": "corrupt",
+      "defects": [
+        "salary_negative"
+      ]
+    },
+    {
+      "row": 448,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 449,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 450,
+      "status": "corrupt",
+      "defects": [
+        "birth_date_future",
+        "hire_date_before_birth",
+        "snils_bad_checksum"
+      ]
+    },
+    {
+      "row": 451,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 452,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 453,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 454,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 455,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 456,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 457,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 458,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 459,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 460,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 461,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 462,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 463,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 464,
+      "status": "corrupt",
+      "defects": [
+        "birth_date_bad_format",
+        "passport_letters"
+      ]
+    },
+    {
+      "row": 465,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 466,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 467,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 468,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 469,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 470,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 471,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 472,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 473,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 474,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 475,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 476,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 477,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 478,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 479,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 480,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 481,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 482,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 483,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 484,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 485,
+      "status": "corrupt",
+      "defects": [
+        "birth_date_too_old",
+        "position_not_in_dict"
+      ]
+    },
+    {
+      "row": 486,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 487,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 488,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 489,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 490,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 491,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 492,
+      "status": "corrupt",
+      "defects": [
+        "passport_missing"
+      ]
+    },
+    {
+      "row": 493,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 494,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 495,
+      "status": "corrupt",
+      "defects": [
+        "hire_date_before_birth",
+        "salary_huge",
+        "gender_invalid"
+      ]
+    },
+    {
+      "row": 496,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 497,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 498,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 499,
+      "status": "corrupt",
+      "defects": [
+        "birth_date_bad_format",
+        "snils_bad_checksum"
+      ]
+    },
+    {
+      "row": 500,
+      "status": "corrupt",
+      "defects": [
+        "birth_date_future"
+      ]
+    },
+    {
+      "row": 501,
+      "status": "valid",
+      "defects": []
+    },
+    {
+      "row": 502,
+      "status": "duplicate",
+      "defects": [
+        "duplicate_record"
+      ],
+      "source_row": 458
+    },
+    {
+      "row": 503,
+      "status": "duplicate",
+      "defects": [
+        "duplicate_record"
+      ],
+      "source_row": 110
+    },
+    {
+      "row": 504,
+      "status": "duplicate",
+      "defects": [
+        "duplicate_record"
+      ],
+      "source_row": 150
+    },
+    {
+      "row": 505,
+      "status": "duplicate",
+      "defects": [
+        "duplicate_record"
+      ],
+      "source_row": 89
+    },
+    {
+      "row": 506,
+      "status": "duplicate",
+      "defects": [
+        "duplicate_record"
+      ],
+      "source_row": 260
+    },
+    {
+      "row": 507,
+      "status": "duplicate",
+      "defects": [
+        "duplicate_record"
+      ],
+      "source_row": 77
+    },
+    {
+      "row": 508,
+      "status": "duplicate",
+      "defects": [
+        "duplicate_record"
+      ],
+      "source_row": 148
+    },
+    {
+      "row": 509,
+      "status": "duplicate",
+      "defects": [
+        "duplicate_record"
+      ],
+      "source_row": 241
+    },
+    {
+      "row": 510,
+      "status": "duplicate",
+      "defects": [
+        "duplicate_record"
+      ],
+      "source_row": 56
+    },
+    {
+      "row": 511,
+      "status": "duplicate",
+      "defects": [
+        "duplicate_record"
+      ],
+      "source_row": 205
+    },
+    {
+      "row": 512,
+      "status": "duplicate",
+      "defects": [
+        "duplicate_record"
+      ],
+      "source_row": 343
+    },
+    {
+      "row": 513,
+      "status": "duplicate",
+      "defects": [
+        "duplicate_record"
+      ],
+      "source_row": 143
+    },
+    {
+      "row": 514,
+      "status": "duplicate",
+      "defects": [
+        "duplicate_record"
+      ],
+      "source_row": 15
+    },
+    {
+      "row": 515,
+      "status": "duplicate",
+      "defects": [
+        "duplicate_record"
+      ],
+      "source_row": 324
+    },
+    {
+      "row": 516,
+      "status": "duplicate",
+      "defects": [
+        "duplicate_record"
+      ],
+      "source_row": 113
+    },
+    {
+      "row": 517,
+      "status": "duplicate",
+      "defects": [
+        "duplicate_record"
+      ],
+      "source_row": 56
+    },
+    {
+      "row": 518,
+      "status": "duplicate",
+      "defects": [
+        "duplicate_record"
+      ],
+      "source_row": 251
+    },
+    {
+      "row": 519,
+      "status": "duplicate",
+      "defects": [
+        "duplicate_record"
+      ],
+      "source_row": 83
+    },
+    {
+      "row": 520,
+      "status": "duplicate",
+      "defects": [
+        "duplicate_record"
+      ],
+      "source_row": 90
+    },
+    {
+      "row": 521,
+      "status": "duplicate",
+      "defects": [
+        "duplicate_record"
+      ],
+      "source_row": 354
+    },
+    {
+      "row": 522,
+      "status": "duplicate",
+      "defects": [
+        "duplicate_record"
+      ],
+      "source_row": 235
+    },
+    {
+      "row": 523,
+      "status": "duplicate",
+      "defects": [
+        "duplicate_record"
+      ],
+      "source_row": 354
+    },
+    {
+      "row": 524,
+      "status": "duplicate",
+      "defects": [
+        "duplicate_record"
+      ],
+      "source_row": 192
+    },
+    {
+      "row": 525,
+      "status": "duplicate",
+      "defects": [
+        "duplicate_record"
+      ],
+      "source_row": 192
+    },
+    {
+      "row": 526,
+      "status": "duplicate",
+      "defects": [
+        "duplicate_record"
+      ],
+      "source_row": 68
+    },
+    {
+      "row": 527,
+      "status": "duplicate",
+      "defects": [
+        "duplicate_record"
+      ],
+      "source_row": 402
+    },
+    {
+      "row": 528,
+      "status": "duplicate",
+      "defects": [
+        "duplicate_record"
+      ],
+      "source_row": 353
+    },
+    {
+      "row": 529,
+      "status": "duplicate",
+      "defects": [
+        "duplicate_record"
+      ],
+      "source_row": 70
+    },
+    {
+      "row": 530,
+      "status": "duplicate",
+      "defects": [
+        "duplicate_record"
+      ],
+      "source_row": 62
+    },
+    {
+      "row": 531,
+      "status": "duplicate",
+      "defects": [
+        "duplicate_record"
+      ],
+      "source_row": 317
+    },
+    {
+      "row": 532,
+      "status": "duplicate",
+      "defects": [
+        "duplicate_record"
+      ],
+      "source_row": 328
+    },
+    {
+      "row": 533,
+      "status": "duplicate",
+      "defects": [
+        "duplicate_record"
+      ],
+      "source_row": 444
+    },
+    {
+      "row": 534,
+      "status": "duplicate",
+      "defects": [
+        "duplicate_record"
+      ],
+      "source_row": 112
+    },
+    {
+      "row": 535,
+      "status": "duplicate",
+      "defects": [
+        "duplicate_record"
+      ],
+      "source_row": 228
+    },
+    {
+      "row": 536,
+      "status": "duplicate",
+      "defects": [
+        "duplicate_record"
+      ],
+      "source_row": 6
+    },
+    {
+      "row": 537,
+      "status": "duplicate",
+      "defects": [
+        "duplicate_record"
+      ],
+      "source_row": 346
+    },
+    {
+      "row": 538,
+      "status": "duplicate",
+      "defects": [
+        "duplicate_record"
+      ],
+      "source_row": 56
+    },
+    {
+      "row": 539,
+      "status": "duplicate",
+      "defects": [
+        "duplicate_record"
+      ],
+      "source_row": 310
+    },
+    {
+      "row": 540,
+      "status": "duplicate",
+      "defects": [
+        "duplicate_record"
+      ],
+      "source_row": 221
+    },
+    {
+      "row": 541,
+      "status": "duplicate",
+      "defects": [
+        "duplicate_record"
+      ],
+      "source_row": 445
+    },
+    {
+      "row": 542,
+      "status": "duplicate",
+      "defects": [
+        "duplicate_record"
+      ],
+      "source_row": 376
+    },
+    {
+      "row": 543,
+      "status": "duplicate",
+      "defects": [
+        "duplicate_record"
+      ],
+      "source_row": 124
+    },
+    {
+      "row": 544,
+      "status": "duplicate",
+      "defects": [
+        "duplicate_record"
+      ],
+      "source_row": 392
+    },
+    {
+      "row": 545,
+      "status": "duplicate",
+      "defects": [
+        "duplicate_record"
+      ],
+      "source_row": 110
+    },
+    {
+      "row": 546,
+      "status": "duplicate",
+      "defects": [
+        "duplicate_record"
+      ],
+      "source_row": 103
+    },
+    {
+      "row": 547,
+      "status": "duplicate",
+      "defects": [
+        "duplicate_record"
+      ],
+      "source_row": 299
+    },
+    {
+      "row": 548,
+      "status": "duplicate",
+      "defects": [
+        "duplicate_record"
+      ],
+      "source_row": 356
+    },
+    {
+      "row": 549,
+      "status": "duplicate",
+      "defects": [
+        "duplicate_record"
+      ],
+      "source_row": 157
+    },
+    {
+      "row": 550,
+      "status": "duplicate",
+      "defects": [
+        "duplicate_record"
+      ],
+      "source_row": 115
+    },
+    {
+      "row": 551,
+      "status": "duplicate",
+      "defects": [
+        "duplicate_record"
+      ],
+      "source_row": 155
+    },
+    {
+      "row": 552,
+      "status": "duplicate",
+      "defects": [
+        "duplicate_record"
+      ],
+      "source_row": 83
+    },
+    {
+      "row": 553,
+      "status": "duplicate",
+      "defects": [
+        "duplicate_record"
+      ],
+      "source_row": 227
+    },
+    {
+      "row": 554,
+      "status": "duplicate",
+      "defects": [
+        "duplicate_record"
+      ],
+      "source_row": 108
+    },
+    {
+      "row": 555,
+      "status": "duplicate",
+      "defects": [
+        "duplicate_record"
+      ],
+      "source_row": 97
+    },
+    {
+      "row": 556,
+      "status": "duplicate",
+      "defects": [
+        "duplicate_record"
+      ],
+      "source_row": 477
+    },
+    {
+      "row": 557,
+      "status": "duplicate",
+      "defects": [
+        "duplicate_record"
+      ],
+      "source_row": 57
+    },
+    {
+      "row": 558,
+      "status": "duplicate",
+      "defects": [
+        "duplicate_record"
+      ],
+      "source_row": 445
+    },
+    {
+      "row": 559,
+      "status": "duplicate",
+      "defects": [
+        "duplicate_record"
+      ],
+      "source_row": 494
+    },
+    {
+      "row": 560,
+      "status": "duplicate",
+      "defects": [
+        "duplicate_record"
+      ],
+      "source_row": 382
+    },
+    {
+      "row": 561,
+      "status": "duplicate",
+      "defects": [
+        "duplicate_record"
+      ],
+      "source_row": 331
+    },
+    {
+      "row": 562,
+      "status": "duplicate",
+      "defects": [
+        "duplicate_record"
+      ],
+      "source_row": 268
+    },
+    {
+      "row": 563,
+      "status": "duplicate",
+      "defects": [
+        "duplicate_record"
+      ],
+      "source_row": 30
+    },
+    {
+      "row": 564,
+      "status": "duplicate",
+      "defects": [
+        "duplicate_record"
+      ],
+      "source_row": 218
+    },
+    {
+      "row": 565,
+      "status": "duplicate",
+      "defects": [
+        "duplicate_record"
+      ],
+      "source_row": 308
+    },
+    {
+      "row": 566,
+      "status": "duplicate",
+      "defects": [
+        "duplicate_record"
+      ],
+      "source_row": 134
+    },
+    {
+      "row": 567,
+      "status": "duplicate",
+      "defects": [
+        "duplicate_record"
+      ],
+      "source_row": 38
+    },
+    {
+      "row": 568,
+      "status": "duplicate",
+      "defects": [
+        "duplicate_record"
+      ],
+      "source_row": 360
+    },
+    {
+      "row": 569,
+      "status": "duplicate",
+      "defects": [
+        "duplicate_record"
+      ],
+      "source_row": 288
+    },
+    {
+      "row": 570,
+      "status": "duplicate",
+      "defects": [
+        "duplicate_record"
+      ],
+      "source_row": 273
+    },
+    {
+      "row": 571,
+      "status": "duplicate",
+      "defects": [
+        "duplicate_record"
+      ],
+      "source_row": 345
+    },
+    {
+      "row": 572,
+      "status": "duplicate",
+      "defects": [
+        "duplicate_record"
+      ],
+      "source_row": 273
+    },
+    {
+      "row": 573,
+      "status": "duplicate",
+      "defects": [
+        "duplicate_record"
+      ],
+      "source_row": 374
+    },
+    {
+      "row": 574,
+      "status": "duplicate",
+      "defects": [
+        "duplicate_record"
+      ],
+      "source_row": 100
+    },
+    {
+      "row": 575,
+      "status": "duplicate",
+      "defects": [
+        "duplicate_record"
+      ],
+      "source_row": 94
+    },
+    {
+      "row": 576,
+      "status": "duplicate",
+      "defects": [
+        "duplicate_record"
+      ],
+      "source_row": 143
+    },
+    {
+      "row": 577,
+      "status": "duplicate",
+      "defects": [
+        "duplicate_record"
+      ],
+      "source_row": 258
+    },
+    {
+      "row": 578,
+      "status": "duplicate",
+      "defects": [
+        "duplicate_record"
+      ],
+      "source_row": 456
+    },
+    {
+      "row": 579,
+      "status": "duplicate",
+      "defects": [
+        "duplicate_record"
+      ],
+      "source_row": 14
+    },
+    {
+      "row": 580,
+      "status": "duplicate",
+      "defects": [
+        "duplicate_record"
+      ],
+      "source_row": 417
+    },
+    {
+      "row": 581,
+      "status": "duplicate",
+      "defects": [
+        "duplicate_record"
+      ],
+      "source_row": 234
+    },
+    {
+      "row": 582,
+      "status": "duplicate",
+      "defects": [
+        "duplicate_record"
+      ],
+      "source_row": 241
+    },
+    {
+      "row": 583,
+      "status": "duplicate",
+      "defects": [
+        "duplicate_record"
+      ],
+      "source_row": 300
+    },
+    {
+      "row": 584,
+      "status": "duplicate",
+      "defects": [
+        "duplicate_record"
+      ],
+      "source_row": 175
+    },
+    {
+      "row": 585,
+      "status": "duplicate",
+      "defects": [
+        "duplicate_record"
+      ],
+      "source_row": 297
+    },
+    {
+      "row": 586,
+      "status": "duplicate",
+      "defects": [
+        "duplicate_record"
+      ],
+      "source_row": 42
+    },
+    {
+      "row": 587,
+      "status": "duplicate",
+      "defects": [
+        "duplicate_record"
+      ],
+      "source_row": 62
+    },
+    {
+      "row": 588,
+      "status": "duplicate",
+      "defects": [
+        "duplicate_record"
+      ],
+      "source_row": 415
+    },
+    {
+      "row": 589,
+      "status": "duplicate",
+      "defects": [
+        "duplicate_record"
+      ],
+      "source_row": 44
+    },
+    {
+      "row": 590,
+      "status": "duplicate",
+      "defects": [
+        "duplicate_record"
+      ],
+      "source_row": 158
+    },
+    {
+      "row": 591,
+      "status": "duplicate",
+      "defects": [
+        "duplicate_record"
+      ],
+      "source_row": 205
+    },
+    {
+      "row": 592,
+      "status": "duplicate",
+      "defects": [
+        "duplicate_record"
+      ],
+      "source_row": 440
+    },
+    {
+      "row": 593,
+      "status": "duplicate",
+      "defects": [
+        "duplicate_record"
+      ],
+      "source_row": 185
+    },
+    {
+      "row": 594,
+      "status": "duplicate",
+      "defects": [
+        "duplicate_record"
+      ],
+      "source_row": 226
+    },
+    {
+      "row": 595,
+      "status": "duplicate",
+      "defects": [
+        "duplicate_record"
+      ],
+      "source_row": 135
+    },
+    {
+      "row": 596,
+      "status": "duplicate",
+      "defects": [
+        "duplicate_record"
+      ],
+      "source_row": 102
+    },
+    {
+      "row": 597,
+      "status": "duplicate",
+      "defects": [
+        "duplicate_record"
+      ],
+      "source_row": 477
+    },
+    {
+      "row": 598,
+      "status": "duplicate",
+      "defects": [
+        "duplicate_record"
+      ],
+      "source_row": 447
+    },
+    {
+      "row": 599,
+      "status": "duplicate",
+      "defects": [
+        "duplicate_record"
+      ],
+      "source_row": 81
+    },
+    {
+      "row": 600,
+      "status": "duplicate",
+      "defects": [
+        "duplicate_record"
+      ],
+      "source_row": 272
+    },
+    {
+      "row": 601,
+      "status": "duplicate",
+      "defects": [
+        "duplicate_record"
+      ],
+      "source_row": 417
+    }
+  ]
+}
